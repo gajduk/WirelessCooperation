@@ -14,21 +14,9 @@ import simulator.fitness.DeltaFitnessCalculator;
  * @author Andrej Gajduk
  *
  */
-public class AStrategyBehaviour extends AbstractStrategyBehaviour {
+public class TitForTatStrategyBehaviour extends AbstractStrategyBehaviour {
 
-	public AStrategyBehaviour(DeltaFitnessCalculator dfc) {
-		super(dfc);
-	}
-	
-	public AStrategyBehaviour() {
-	
-	}
-	
-	public AStrategyBehaviour(ProbabilityCalculator pc) {
-		super(pc);
-	}
-	
-	public AStrategyBehaviour(DeltaFitnessCalculator dfc,ProbabilityCalculator pc) {
+	public TitForTatStrategyBehaviour(DeltaFitnessCalculator dfc,ProbabilityCalculator pc) {
 		super(dfc,pc);
 	}
 	
@@ -40,11 +28,6 @@ public class AStrategyBehaviour extends AbstractStrategyBehaviour {
 		return false;
 	}
 
-	@Override
-	public StrategyBehavior copy() {
-		return new AStrategyBehaviour(dfc,pc);
-	}
-	
 	@Override
 	public String toString() {
 		return "A";

@@ -1,10 +1,14 @@
 package utils;
 
+import javafx.geometry.Point2D;
 import java.util.List;
+import java.util.Random;
 
 import simulator.Node;
 
 public class Utils {
+	
+	static Random rnd = new Random();
 	
 	public static double distSqr(double x1,double y1,double x2,double y2) {
 		double dx = x1-x2;
@@ -17,7 +21,7 @@ public class Utils {
 	}
 	
 	public static double distSqr(Node a,Node b) {
-		return distSqr(a.getX(),a.getY(),b.getX(),b.getY());
+		return distSqr(a.getNodeIden().getX(),a.getNodeIden().getY(),b.getNodeIden().getX(),b.getNodeIden().getY());
 	}
 	
 	public static double dist(Node a,Node b) {
@@ -43,7 +47,7 @@ public class Utils {
 	public static double totalEnerrgySpent(List<Node> nodes) {
 		double res = 0;
 		for ( Node n : nodes ) {
-			res += n.getTotal_spent_energy();
+			res += n.getEs().getTotal_spent_energy();
 		}
 		return res;
 	}
@@ -53,7 +57,8 @@ public class Utils {
 	}
 	
 	public static boolean isPossibleCooperator(Node sender,Node receiver, Node intermidiate,double distab) {
-		if ( intermidiate.getIdx() != sender.getIdx() && intermidiate.getIdx() != receiver.getIdx() ) {
+		if ( intermidiate.getNodeIden().getIdx() != sender.getNodeIden().getIdx() &&
+			 intermidiate.getNodeIden().getIdx() != receiver.getNodeIden().getIdx() ) {
 			double distan = Utils.distSqr(sender, intermidiate);
 			if ( distan <= distab ) {
 				double distbn = Utils.distSqr(receiver, intermidiate);
@@ -63,6 +68,14 @@ public class Utils {
 			}
 		}
 		return false;
+	}
+	
+	public static Point2D generateRandomPoint2DInsideCricle(double a) {
+		while ( true ) {
+			double x = rnd.nextDouble();
+			double y = rnd.nextDouble();
+			if ( distSqr(x,y,a/2,a/2) < a*a/4 ) return new Point2D(x, y);
+		}
 	}
 
 }

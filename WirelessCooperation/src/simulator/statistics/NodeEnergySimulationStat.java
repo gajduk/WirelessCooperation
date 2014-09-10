@@ -26,7 +26,7 @@ public class NodeEnergySimulationStat extends AbstractSimulationStat {
 				counts.add(new ArrayList<Integer>());
 		}
 		for ( Node n : simulationDirector.getWirelessNodeMap().getNodes() ) 
-			counts.get(n.getIdx()).add(n.isCooperator()?1:0);
+			counts.get(n.getNodeIden().getIdx()).add(n.isCooperator()?1:0);
 	}
 	
 	@Override
@@ -34,11 +34,11 @@ public class NodeEnergySimulationStat extends AbstractSimulationStat {
 		double a = simulationDirector.getWirelessNodeMap().geta();
 		for ( Node n : simulationDirector.getWirelessNodeMap().getNodes() ) {
 			double percent_coop = 0;
-			for ( Integer i : counts.get(n.getIdx()) ) {
+			for ( Integer i : counts.get(n.getNodeIden().getIdx()) ) {
 				percent_coop += i;
 			}
-			percent_coop /= counts.get(n.getIdx()).size();
-			sb.append("Radius:"+Utils.dist(n.getX(), n.getY(),a/2,a/2)+" Energy_total:"+n.getTotal_spent_energy()+" PercentCoop:"+percent_coop+" EnergyCoop:"+n.getTotal_energy_spent_cooperator()+" CountIntermediate:"+n.count_intermediate+" CountCoop:"+n.count_real_cooperation+"\n");
+			percent_coop /= counts.get(n.getNodeIden().getIdx()).size();
+			sb.append("Radius:"+Utils.dist(n.getNodeIden().getX(), n.getNodeIden().getY(),a/2,a/2)+" Energy_total:"+n.getEs().getTotal_spent_energy()+" PercentCoop:"+percent_coop+" EnergyCoop:"+n.getEs().getTotal_energy_spent_cooperator()+" CountIntermediate:"+n.count_intermediate+" CountCoop:"+n.count_real_cooperation+"\n");
 		}
 		super.simulationFinished(simulationDirector);
 	}

@@ -26,7 +26,7 @@ public class NodeCooperationStat extends AbstractSimulationStat {
 				counts.add(new ArrayList<Integer>());
 		}
 		for ( Node n : simulationDirector.getWirelessNodeMap().getNodes() ) 
-			counts.get(n.getIdx()).add(n.isCooperator()?1:0);
+			counts.get(n.getNodeIden().idx).add(n.isCooperator()?1:0);
 	}
 	
 	@Override
@@ -42,7 +42,7 @@ public class NodeCooperationStat extends AbstractSimulationStat {
 			
 			percent_coop /= counts.get(n.getIdx()).size();
 			*/
-			sb.append("Radius:"+Utils.dist(n.getX(), n.getY(),a/2,a/2)+" Energy_total:"+n.getTotal_spent_energy()+" PercentCoop:"+counts.get(i++)+"\n");
+			sb.append("Radius:"+Utils.dist(n.getNodeIden().getX(), n.getNodeIden().getY(),a/2,a/2)+" Energy_total:"+n.getEs().getTotal_spent_energy()+" PercentCoop:"+counts.get(i++)+"\n");
 		}
 		
 		super.simulationFinished(simulationDirector);

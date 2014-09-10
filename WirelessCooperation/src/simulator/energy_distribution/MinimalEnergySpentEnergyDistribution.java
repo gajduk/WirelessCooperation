@@ -7,9 +7,8 @@ import simulator.Node;
 
 public class MinimalEnergySpentEnergyDistribution extends AbstractEnergyDistribution {
 
-	@Override
-	public EnergyDistribution copy() {
-		return new MinimalEnergySpentEnergyDistribution(); 
+	public MinimalEnergySpentEnergyDistribution(double ni, double alpha) {
+		super(ni, alpha);
 	}
 
 	@Override

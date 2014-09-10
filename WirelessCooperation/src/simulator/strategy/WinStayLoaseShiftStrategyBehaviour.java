@@ -16,21 +16,9 @@ import simulator.fitness.DeltaFitnessCalculator;
  * @author Andrej Gajduk
  *
  */
-public class BStrategyBehaviour extends AbstractStrategyBehaviour {
+public class WinStayLoaseShiftStrategyBehaviour extends AbstractStrategyBehaviour {
 	
-	public BStrategyBehaviour() {
-		
-	}
-
-	public BStrategyBehaviour(DeltaFitnessCalculator dfc) {
-		super(dfc);
-	}
-	
-	public BStrategyBehaviour(ProbabilityCalculator pc) {
-		super(pc);
-	}
-	
-	public BStrategyBehaviour(DeltaFitnessCalculator dfc,ProbabilityCalculator pc) {
+	public WinStayLoaseShiftStrategyBehaviour(DeltaFitnessCalculator dfc,ProbabilityCalculator pc) {
 		super(dfc,pc);
 	}
 		
@@ -39,11 +27,6 @@ public class BStrategyBehaviour extends AbstractStrategyBehaviour {
 			boolean is_cooperator, boolean decision) {
 		if ( decision ) return is_cooperator;
 		return !is_cooperator;
-	}
-
-	@Override
-	public StrategyBehavior copy() {
-		return new BStrategyBehaviour(dfc,pc);
 	}
 	
 	@Override

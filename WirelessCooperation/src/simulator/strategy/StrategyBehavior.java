@@ -24,13 +24,7 @@ public interface StrategyBehavior {
 	public abstract boolean toCooperateOrNotToCooperate(boolean is_cooperator,FittnessMemory fm);
 		
 	public DeltaFitnessCalculator getDfc();
-
-	public void setDfc(DeltaFitnessCalculator dfc);
 	
 	public ProbabilityCalculator getPc();
-
-	public void setPc(ProbabilityCalculator pc);
-
-	public abstract StrategyBehavior copy();
 
 }

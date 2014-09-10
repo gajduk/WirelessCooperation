@@ -26,16 +26,6 @@ public abstract class AbstractEnergyDistribution implements EnergyDistribution {
 	protected double alpha;
 	
 	@Override
-	public void setNi(double ni) {
-		this.ni = ni;
-	}
-
-	@Override
-	public void setAlpha(double alpha) {
-		this.alpha = alpha;
-	}
-
-	@Override
 	public double getNi() {
 		return ni;
 	}
@@ -45,8 +35,6 @@ public abstract class AbstractEnergyDistribution implements EnergyDistribution {
 		return alpha;
 	}
 
-	public AbstractEnergyDistribution() {}
-	
 	public AbstractEnergyDistribution(double ni,double alpha){
 		this.ni = ni;
 		this.alpha = alpha;
@@ -78,13 +66,13 @@ public abstract class AbstractEnergyDistribution implements EnergyDistribution {
 		for ( Node n : cooperators ) ++n.count_intermediate;
 		double pd = energyForDirectTransmision(sender,recv);
 		sender.updateenergy_spent_sad_from_last_update(pd);
-		List<Node> real_cooperators = getRealCooperators(sender, recv, cooperators); 
-		List<NodeEnergyConsumedPair> necps = getEnergyConsumedForEachNodeInternal(sender,recv,real_cooperators);
+		List<Node> potential_coops = getRealCooperators(sender, recv, cooperators); 
+		List<NodeEnergyConsumedPair> necps = getEnergyConsumedForEachNodeInternal(sender,recv,potential_coops);
 		double res = 0.0;
 		for ( NodeEnergyConsumedPair necp : necps ) {
 			if ( ! necp.def ) {
 				necp.n.updateenergy_spent_cooperator_from_last_update(necp.energy);
-				++necp.n.count_real_cooperation;
+				necp.n.incCooperations();
 			}
 			else {
 				necp.n.updateenergy_spent_defector_from_last_update(necp.energy);

@@ -23,7 +23,7 @@ public class TotalSpentEnergySimulationStat extends AbstractSimulationStat {
 	public void simulationFinished(SimulationDirector simulationDirector) {
 		total_energy_spent = 0;
 		for ( Node n : simulationDirector.getWirelessNodeMap().getNodes() ) {
-			total_energy_spent += n.getTotal_spent_energy();
+			total_energy_spent += n.getEs().getTotal_spent_energy();
 		}
 		super.simulationFinished(simulationDirector);
 	}

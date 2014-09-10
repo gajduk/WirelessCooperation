@@ -7,9 +7,7 @@ import simulator.Node;
 
 @Deprecated
 public class DepracatedEnergyDistribution extends AbstractEnergyDistribution {
-	
-	public DepracatedEnergyDistribution() {}
-	
+		
 	public DepracatedEnergyDistribution(double ni,double alpha) {
 		super(ni,alpha);
 	}
@@ -39,11 +37,6 @@ public class DepracatedEnergyDistribution extends AbstractEnergyDistribution {
 			}
 		}
 		return res;
-	}
-
-	@Override
-	public EnergyDistribution copy() {
-		return new DepracatedEnergyDistribution();
 	}
 
 	

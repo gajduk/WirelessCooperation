@@ -4,7 +4,6 @@ import gui.SimulationView;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Random;
 
 import simulator.adaptation.StrategyAdaptation;
 import simulator.energy_distribution.EnergyDistribution;
@@ -37,7 +36,6 @@ public class SimulationDirector {
 		this.paused = true;
 		this.speed = 0;
 		this.simulation_stats = new LinkedList<SimulationStat>();  
-		tm.setRandom(new Random());
 	}
 	
 	public void addSimulationStat(SimulationStat ss) {
@@ -101,10 +99,10 @@ public class SimulationDirector {
 		int goal_time_step = (int) Math.max(time_steps-time_steps_during_single_iteration,0);
 		while ( time_steps > goal_time_step ) {
 				if ( Math.random() < p ) {
-					Pair<Node> connection_pair = tm.chooseConnectionpair();
+					Pair<Node> connection_pair = tm.chooseConnectionpair(wnm.getNodes());
 					sendMessage(connection_pair.a,connection_pair.b);
 				}
-				List<Node> nodes_to_adapt_strategy = sa.getNodesToAdaptStrategy(time_steps);
+				List<Node> nodes_to_adapt_strategy = sa.getNodesToAdaptStrategy(wnm.getNodes(),time_steps);
 				for ( Node n : nodes_to_adapt_strategy ) {
 					n.adaptStrategy();
 				}

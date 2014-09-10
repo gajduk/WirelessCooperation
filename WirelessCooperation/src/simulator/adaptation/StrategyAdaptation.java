@@ -6,12 +6,6 @@ import simulator.Node;
 
 public interface StrategyAdaptation {
 	
-	public abstract List<Node> getNodesToAdaptStrategy(long current_step);
-	
-	public abstract void setT(double T);
-	
-	public abstract void setNodes(List<Node> nodes);
-
-	public abstract StrategyAdaptation copy();
+	public abstract List<Node> getNodesToAdaptStrategy(List<Node> nodes,long current_step);
 
 }

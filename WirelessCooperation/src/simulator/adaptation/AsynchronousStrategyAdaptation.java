@@ -1,6 +1,5 @@
 package simulator.adaptation;
 
-import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -13,32 +12,19 @@ public class AsynchronousStrategyAdaptation extends AbstractStrategyAdaptation {
 	 */
 	private double frequency;
 	
-	public AsynchronousStrategyAdaptation(List<Node> nodes,double frequency) {
-		super(nodes);
+	public AsynchronousStrategyAdaptation(double frequency) {
+		super();
 		this.frequency = frequency;
 	}
-	
-	public AsynchronousStrategyAdaptation() {
-		
-	}
+
 
 	@Override
-	protected List<Node> getNodesToAdaptStrategyInternal(long current_step) {
+	protected List<Node> getNodesToAdaptStrategyInternal(List<Node> nodes,long current_step) {
 		List<Node> res = new LinkedList<Node>();
 		for ( Node n : nodes ) {
 			if ( Math.random() < frequency ) res.add(n);
 		}
 		return res;
-	}
-
-	@Override
-	public void setT(double T) {
-		frequency = 1/T;
-	}
-
-	@Override
-	public StrategyAdaptation copy() {
-		return new AsynchronousStrategyAdaptation();
 	}
 
 }

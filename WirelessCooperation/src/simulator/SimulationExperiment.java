@@ -31,8 +31,8 @@ import simulator.fitness.SimpleFitnessCalculator;
 import simulator.statistics.AveragePercentCooperatorsSpentSimulationStat;
 import simulator.statistics.NodeEnergySimulationStat;
 import simulator.statistics.TotalSpentEnergySimulationStat;
-import simulator.strategy.AStrategyBehaviour;
-import simulator.strategy.BStrategyBehaviour;
+import simulator.strategy.TitForTatStrategyBehaviour;
+import simulator.strategy.WinStayLoaseShiftStrategyBehaviour;
 import simulator.strategy.CooperatorAlwaysStrategyBehaviour;
 import simulator.strategy.CooperatorNeverStrategyBehaviour;
 import simulator.strategy.HeavisideProbabilityCalculator;
@@ -71,21 +71,21 @@ public class SimulationExperiment {
 		oh = new OptionMultiClass<DeltaFitnessCalculator>("DF","Determines the way the change in fitness is calculated for each node",delta_calcs.get("simple"),"simple",delta_calcs);
 		options.put("DF",oh);
 		HashMap<String,StrategyBehavior> strategy_behavs = new HashMap<String,StrategyBehavior>();
-		strategy_behavs.put("A",new AStrategyBehaviour(new HeavisideProbabilityCalculator(0)));
-		strategy_behavs.put("B",new BStrategyBehaviour(new HeavisideProbabilityCalculator(0)));
-		strategy_behavs.put("AB",new AStrategyBehaviour(new HeavisideProbabilityCalculator(-1)));
-		strategy_behavs.put("BB",new BStrategyBehaviour(new HeavisideProbabilityCalculator(10000.0)));
-		strategy_behavs.put("AS",new AStrategyBehaviour(new SigmoidProbabilityCalculator()));
-		strategy_behavs.put("BS",new BStrategyBehaviour(new SigmoidProbabilityCalculator()));
-		strategy_behavs.put("ABS",new AStrategyBehaviour(new SigmoidProbabilityCalculator(1.0,-0.5)));
-		strategy_behavs.put("BBS",new BStrategyBehaviour(new SigmoidProbabilityCalculator(1.0,-1.0)));
+		strategy_behavs.put("A",new TitForTatStrategyBehaviour(new HeavisideProbabilityCalculator(0)));
+		strategy_behavs.put("B",new WinStayLoaseShiftStrategyBehaviour(new HeavisideProbabilityCalculator(0)));
+		strategy_behavs.put("AB",new TitForTatStrategyBehaviour(new HeavisideProbabilityCalculator(-1)));
+		strategy_behavs.put("BB",new WinStayLoaseShiftStrategyBehaviour(new HeavisideProbabilityCalculator(10000.0)));
+		strategy_behavs.put("AS",new TitForTatStrategyBehaviour(new SigmoidProbabilityCalculator()));
+		strategy_behavs.put("BS",new WinStayLoaseShiftStrategyBehaviour(new SigmoidProbabilityCalculator()));
+		strategy_behavs.put("ABS",new TitForTatStrategyBehaviour(new SigmoidProbabilityCalculator(1.0,-0.5)));
+		strategy_behavs.put("BBS",new WinStayLoaseShiftStrategyBehaviour(new SigmoidProbabilityCalculator(1.0,-1.0)));
 		strategy_behavs.put("C",new CooperatorAlwaysStrategyBehaviour(new HeavisideProbabilityCalculator(-1)));
 		strategy_behavs.put("D",new CooperatorNeverStrategyBehaviour(new HeavisideProbabilityCalculator(-1)));
 		oh = new OptionMultiClass<StrategyBehavior>("S","The strategy for each node. Strategy plays a crucial role in that it determines whether a node becomes a cooperator or deflector",strategy_behavs.get("A"),"A",strategy_behavs);
 		options.put("S",oh);
 		HashMap<String,TrafficManager> tfs = new HashMap<String,TrafficManager>();
 		tfs.put("uniform",new TrafficManager());
-		tfs.put("center",new CenterReciverTrafficManager());
+		tfs.put("center",new CenterReceiverTrafficManager());
 		
 		oh = new OptionMultiClass<TrafficManager>("TL","Determines the pattern of which nodes send to whom in each time step.Trafic load",tfs.get("uniform"),"uniform",tfs);
 		options.put("TL",oh);
@@ -123,14 +123,11 @@ public class SimulationExperiment {
 		}
 		NodeFactory nf = new NodeFactory();
 		FitnessCalculator fc = (FitnessCalculator) options.get("F").getValue(args);
-		nf.setFc(fc);
 		StrategyBehavior sb = (StrategyBehavior) options.get("S").getValue(args);
 		sb = sb.copy();
 		DeltaFitnessCalculator dfc = (DeltaFitnessCalculator) options.get("DF").getValue(args);
 		boolean buffers_full = ((int) options.get("FULL").getValue(args)) == 1;
 		sb.setDfc(dfc);
-		nf.setSb(sb);
-		nf.setRemember_last_fitness_values(dfc.getMinimumNumberOfValuesForDeltaCalculation());
 		int N = (int) options.get("N").getValue(args);
 		double a = (double) options.get("a").getValue(args);
 		WirelessNodeMap wnm = new WirelessNodeMap(N, a, nf);
@@ -166,7 +163,7 @@ public class SimulationExperiment {
 //				int idx = 1;
 				Node n = sd.getWirelessNodeMap().getNodes().get(idx);
 				if ( n.isCooperator() ) continue;
-				coop_dist_from_center = Utils.dist(n.getX(), n.getY(),a/2,a/2);
+				coop_dist_from_center = Utils.dist(n.getNodeIden().getX(), n.getNodeIden().getY(),a/2,a/2);
 				n.setCooperator(true); break;
 			}
 		}

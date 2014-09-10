@@ -6,7 +6,7 @@ public class SimpleFitnessCalculator extends AbstractFitnessCalculator {
 
 	@Override
 	public void updateFitnessForNode(Node n) {
-		double current_fittness_value = -n.getEnergy_spent_from_last_update();
+		double current_fittness_value = -n.getEs().getEnergy_spent_from_last_update();
 		n.addFitnessValue(current_fittness_value);
 	}
 	

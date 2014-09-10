@@ -9,20 +9,14 @@ package simulator.strategy;
 public class CooperatorAlwaysStrategyBehaviour extends
 		AbstractStrategyBehaviour {
 
-	public CooperatorAlwaysStrategyBehaviour(
-			ProbabilityCalculator pc) {
-		setPc(pc);
+	public CooperatorAlwaysStrategyBehaviour() {
+		super(null,null);
 	}
 
 	@Override
 	protected boolean toCooperateOrNotToCooperateInternal(
 			boolean is_cooperator, boolean decision) {
 		return true;
-	}
-
-	@Override
-	public StrategyBehavior copy() {
-		return this;
 	}
 
 	@Override

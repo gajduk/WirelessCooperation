@@ -7,8 +7,6 @@ import simulator.Node;
 
 public class ClosestAllEnergyDistribution extends AbstractEnergyDistribution {
 	
-	public ClosestAllEnergyDistribution() {}
-
 	public ClosestAllEnergyDistribution(double ni,double alpha) {
 		super(ni,alpha);
 	}
@@ -37,11 +35,6 @@ public class ClosestAllEnergyDistribution extends AbstractEnergyDistribution {
 		return res;
 	}
 
-	@Override
-	public EnergyDistribution copy() {
-		return new ClosestAllEnergyDistribution();
-	}
-	
 	@Override
 	public String toString() {
 		return "closest";

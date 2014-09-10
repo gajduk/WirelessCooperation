@@ -1,7 +1,7 @@
 package main;
 
+import builder.SimulatorBuilder;
 import simulator.SimulationDirector;
-import simulator.SimulatorBuilder;
 
 
 public class Test {

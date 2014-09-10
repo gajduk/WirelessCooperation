@@ -11,14 +11,6 @@ public class EvenlyDistributedEnergyDistribution extends AbstractEnergyDistribut
 		super(ni,alpha);
 	}
 
-	public EvenlyDistributedEnergyDistribution() {
-	}
-
-	@Override
-	public EnergyDistribution copy() {
-		return new EvenlyDistributedEnergyDistribution(ni,alpha);
-	}
-
 	@Override
 	protected List<NodeEnergyConsumedPair> getEnergyConsumedForEachNodeInternal(
 			Node sender, Node recv, List<Node> cooperators) {

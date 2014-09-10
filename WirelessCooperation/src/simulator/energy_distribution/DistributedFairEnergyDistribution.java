@@ -8,8 +8,6 @@ import utils.Utils;
 
 public class DistributedFairEnergyDistribution extends AbstractEnergyDistribution {
 	
-	public DistributedFairEnergyDistribution() {}
-	
 	public DistributedFairEnergyDistribution(double ni,double alpha) {
 		super(ni,alpha);
 	}
@@ -41,11 +39,6 @@ public class DistributedFairEnergyDistribution extends AbstractEnergyDistributio
 		return res;
 	}
 
-	@Override
-	public EnergyDistribution copy() {
-		return new DistributedFairEnergyDistribution();
-	}
-	
 	@Override
 	public String toString() {
 		return "dfair";

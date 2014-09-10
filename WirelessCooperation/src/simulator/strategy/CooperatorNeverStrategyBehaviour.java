@@ -9,9 +9,8 @@ import simulator.fitness.FittnessMemory;
  */
 public class CooperatorNeverStrategyBehaviour extends AbstractStrategyBehaviour {
 
-	public CooperatorNeverStrategyBehaviour(
-			ProbabilityCalculator pc) {
-		setPc(pc);
+	public CooperatorNeverStrategyBehaviour() {
+		super(null,null);
 	}
 
 	@Override
@@ -24,11 +23,6 @@ public class CooperatorNeverStrategyBehaviour extends AbstractStrategyBehaviour 
 	protected boolean toCooperateOrNotToCooperateInternal(
 			boolean is_cooperator, boolean decision) {
 		return false;
-	}
-
-	@Override
-	public StrategyBehavior copy() {
-		return this;
 	}
 
 	@Override

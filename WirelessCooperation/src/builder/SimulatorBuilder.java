@@ -1,52 +1,50 @@
-package simulator;
+package builder;
 
 import gui.SimulationView;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
+import simulator.Node;
+import simulator.NodeIdentity;
+import simulator.SimulationDirector;
+import simulator.TrafficManager;
+import simulator.WirelessNodeMap;
 import simulator.adaptation.StrategyAdaptation;
 import simulator.adaptation.SynchronousStrategyAdaptation;
 import simulator.energy_distribution.ClosestAllEnergyDistribution;
 import simulator.energy_distribution.EnergyDistribution;
-import simulator.fitness.DeltaFitnessCalculator;
 import simulator.fitness.FitnessCalculator;
 import simulator.fitness.SimpleDeltaFitnessCalculator;
 import simulator.fitness.SimpleFitnessCalculator;
-import simulator.strategy.AStrategyBehaviour;
 import simulator.strategy.HeavisideProbabilityCalculator;
 import simulator.strategy.StrategyBehavior;
+import simulator.strategy.TitForTatStrategyBehaviour;
 
 public class SimulatorBuilder {
 	
 	FitnessCalculator fc = new SimpleFitnessCalculator();
-	StrategyBehavior sb = new AStrategyBehaviour(new HeavisideProbabilityCalculator(0));
-	DeltaFitnessCalculator dfc = new SimpleDeltaFitnessCalculator();
+	StrategyBehavior sb = new TitForTatStrategyBehaviour(new SimpleDeltaFitnessCalculator(), new HeavisideProbabilityCalculator(0));
 	double a = 1.0d;
 	long t = 999;
-	double alpha = 2.0;
 	double p = 1.0d;
-	double ni = 0.5d;
 	int N = 50;
 	TrafficManager tm = new TrafficManager();
-	StrategyAdaptation sa = new SynchronousStrategyAdaptation();
-	EnergyDistribution ed = new ClosestAllEnergyDistribution();
+	StrategyAdaptation sa = new SynchronousStrategyAdaptation(1000);
+	EnergyDistribution ed = new ClosestAllEnergyDistribution(0.5d,2.0d);
 	boolean gui = true;
 	boolean paused = true;
 	int coop  = 0;
+	Architecture arc = Architecture.AdHoc;
+	Mobility mob = Mobility.None;
+
+	
 	
 	public SimulationDirector build() {
-		NodeFactory nf = new NodeFactory();
-		nf.setFc(fc);
-		sb.setDfc(dfc);
-		nf.setSb(sb);
-		nf.setRemember_last_fitness_values(dfc.getMinimumNumberOfValuesForDeltaCalculation());
-		WirelessNodeMap wnm = new WirelessNodeMap(N, a, nf);
-		List<Node> nodes = wnm.getNodes();
-		tm.setNodes(nodes);
-		sa.setT(t);
-		sa.setNodes(nodes);
-		ed.setAlpha(alpha);
-		ed.setNi(ni);
+		List<NodeIdentity> node_idens = arc.generateNodes(a, N);
+		List<Node> nodes = new ArrayList<Node>(node_idens.stream().map(node_iden -> new Node(node_iden,2,false,sb,fc)).collect(Collectors.toList()));
+		WirelessNodeMap wnm = new WirelessNodeMap(a,nodes);
 		SimulationView sv = null;
 		if ( gui ) {
 			sv = new SimulationView();

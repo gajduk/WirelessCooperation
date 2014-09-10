@@ -6,7 +6,7 @@ public class ImprovedFitnessCalculator extends AbstractFitnessCalculator {
 
 	@Override
 	public void updateFitnessForNode(Node n) {
-		double current_fittness_value = n.getEnergy_spent_sad_from_last_update()-(n.getEnergy_spent_cooperator_from_last_update()+n.getEnergy_spent_defector_from_last_update());
+		double current_fittness_value = n.getEs().getEnergy_spent_sad_from_last_update()-(n.getEs().getEnergy_spent_cooperator_from_last_update()+n.getEs().getEnergy_spent_defector_from_last_update());
 		n.addFitnessValue(current_fittness_value);
 	}
 	
