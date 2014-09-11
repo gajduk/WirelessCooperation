@@ -42,6 +42,12 @@ import utils.Utils;
 
 public class SimulationExperiment {
 	
+	public static void main(String[] args) {
+		
+	}
+	
+	/*
+	
 	public static HashMap<String,OptionHandler> options;
 	
 	static {
@@ -189,14 +195,14 @@ public class SimulationExperiment {
 		StringBuilder info = new StringBuilder();
 		
 		info.append("strat:").append(sb.toString()).append("\n");
-		/*
+		
 		info.append("Fitness:").append(fc.toString()).append("\n");
 		info.append("Delta Fitness:").append(dfc.toString()).append("\n");
 		
 		info.append("alpha:").append(alpha).append("\n");
 		
 		info.append("ni:").append(ni).append("\n");
-		*/
+		
 		info.append("ec:").append(ec.toString()).append("\n");
 //		info.append("coop_dist:").append(coop_dist_from_center+"");
 //	    sd.addSimulationStat(new TotalSpentEnergySimulationStat(out_energy,info.toString()));
@@ -207,12 +213,8 @@ public class SimulationExperiment {
 		sd.runSimulation(simulation_length);
 	}
 	
-	public static PrintWriter out_coop;
-	public static PrintWriter out_energy;
-	public static PrintWriter out_time;
-	public static PrintWriter out_nodes;
 	
-	/*
+	
 	
 	 a = 100
 	 
@@ -220,6 +222,11 @@ public class SimulationExperiment {
 	 alpha = 3, C = 500000000 
 	 alpha = 4, C = 10000000000
 	 
-	*/
+	
 
+	*/
+	public static PrintWriter out_coop;
+	public static PrintWriter out_energy;
+	public static PrintWriter out_time;
+	public static PrintWriter out_nodes;
 }

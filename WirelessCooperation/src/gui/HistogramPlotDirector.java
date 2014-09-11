@@ -43,13 +43,13 @@ public class HistogramPlotDirector extends AbstractPlotFrame {
 	private double[] getHeights() {
 		double a = sd.getWirelessNodeMap().geta();
 		int n = (int)(Utils.dist(0, 0, a/2, a/2)/step)+1;
-		Node center = new Node(a/2, a/2, -1, -1, false, null, null);
+		
 		double res[] = new double[n];
 		double count[] = new double[n];
 		for ( Node nn : sd.getWirelessNodeMap().getNodes() ) {
-			int idx = (int)(Utils.dist(nn,center)/step);
+			int idx = (int)(Utils.dist(nn.getNodeIden().getX(),nn.getNodeIden().getY(),a/2, a/2)/step);
 			++count[idx];
-			res[idx] += nn.getTotal_spent_energy();
+			res[idx] += nn.getEs().getTotal_spent_energy();
 		}
 		double sum = 0.0;
 		for ( int i = 0 ; i < n ; ++i ) {

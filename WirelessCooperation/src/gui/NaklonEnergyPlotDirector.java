@@ -22,7 +22,7 @@ public class NaklonEnergyPlotDirector extends LinePlotFrame {
 		double res = 0.0;
 		WirelessNodeMap wnm = sd.getWirelessNodeMap();
 		for ( Node n : wnm.getNodes() ) {
-			res += n.getTotal_spent_energy();
+			res += n.getEs().getTotal_spent_energy();
 		}
 		return res/intervals_passed+1;
 	}

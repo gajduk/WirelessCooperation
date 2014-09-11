@@ -23,7 +23,7 @@ public class AverageEnergySpentLinePlotFrame extends LinePlotFrame {
 	protected double getCurrentValue() {
 		double current = 0.0;
 		for ( Node n : sd.getWirelessNodeMap().getNodes() ) {
-			current += n.getTotal_spent_energy();
+			current += n.getEs().getTotal_spent_energy();
 		}
 		double res = current-last_val;
 		last_val = current;

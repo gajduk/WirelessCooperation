@@ -5,6 +5,7 @@ import gui.SimulationView;
 import java.util.LinkedList;
 import java.util.List;
 
+import builder.Mobility;
 import simulator.adaptation.StrategyAdaptation;
 import simulator.energy_distribution.EnergyDistribution;
 import simulator.statistics.SimulationStat;
@@ -21,12 +22,14 @@ public class SimulationDirector {
 	private double p;
 	private boolean paused;
 	private long speed;
-	private static final int time_steps_during_single_iteration = 1000;
+	private static final int time_steps_during_single_iteration = 500;
 	private long current_time_step;
 	private long time_steps;
 	private List<SimulationStat> simulation_stats;
 	
-	public SimulationDirector(double p,WirelessNodeMap wnm,TrafficManager tm,EnergyDistribution ec,StrategyAdaptation sa,SimulationView sv) {
+	private Mobility mob;
+	
+	public SimulationDirector(double p,WirelessNodeMap wnm,TrafficManager tm,EnergyDistribution ec,StrategyAdaptation sa,SimulationView sv, Mobility mob) {
 		this.wnm = wnm;
 		this.tm = tm;
 		this.ec = ec;
@@ -36,6 +39,7 @@ public class SimulationDirector {
 		this.paused = true;
 		this.speed = 0;
 		this.simulation_stats = new LinkedList<SimulationStat>();  
+		this.mob = mob;
 	}
 	
 	public void addSimulationStat(SimulationStat ss) {
@@ -49,11 +53,6 @@ public class SimulationDirector {
 		this.simulation_stats.clear();
 	}
 	
-	public SimulationDirector(double p, WirelessNodeMap wnm,
-			TrafficManager tm, EnergyDistribution ec, StrategyAdaptation sa) {
-		this(p,wnm,tm,ec,sa,null);	
-	}
-
 	public long getCurrentTimeStep() {
 		return current_time_step;
 	}
@@ -108,6 +107,7 @@ public class SimulationDirector {
 				}
 				--time_steps;
 		}
+		mob.updateLocations(wnm.getNodes(),wnm.geta());
 		current_time_step += time_steps_during_single_iteration;
 		if ( sv != null ) {
 			sv.update();

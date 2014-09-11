@@ -15,8 +15,10 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 
+import builder.Mobility;
 import simulator.Node;
 import simulator.SimulationDirector;
+import utils.Pair;
 import utils.Utils;
 
 public class NetworkPanel extends JPanel {
@@ -114,14 +116,15 @@ public class NetworkPanel extends JPanel {
 	}
 	
 	public JPopupMenu getPopupMenuForNode ( Node n) {
+		int idx = n.getNodeIden().getIdx();
 		JPopupMenu res = new JPopupMenu();
-		JLabel lbl_idx = new JLabel(n.getIdx()+"");
+		JLabel lbl_idx = new JLabel(idx+"");
 		res.add(lbl_idx);
 		JMenuItem menuItem = new JMenuItem("total energy spent",
 				KeyEvent.VK_E);
 		menuItem.getAccessibleContext().setAccessibleDescription(
-				"Plots the total energy spent for the node: "+n.getIdx());
-		PlotFrame pd = new TotalEnergySpentNodeLinePlotFrame(sd, "Total energy spent for Node:"+n.getIdx(),SimulationView.last,1,n,Color.blue);
+				"Plots the total energy spent for the node: "+idx);
+		PlotFrame pd = new TotalEnergySpentNodeLinePlotFrame(sd, "Total energy spent for Node:"+idx,SimulationView.last,1,n,Color.blue);
 		sv.addPlot(pd);
 		menuItem.addActionListener(new PlotActionListener(pd));
 		res.add(menuItem);
@@ -130,21 +133,17 @@ public class NetworkPanel extends JPanel {
 				KeyEvent.VK_D);
 		menuItem.getAccessibleContext().setAccessibleDescription(
 				"Plots the delta energy: the energy spent since last time step");
-		pd = new AverageEnergySpentNodeLinePlotFrame(sd, "Delta energy for node:"+n.getIdx(),SimulationView.last,1,n,Color.blue,50);
+		pd = new AverageEnergySpentNodeLinePlotFrame(sd, "Delta energy for node:"+idx,SimulationView.last,1,n,Color.blue,50);
 		sv.addPlot(pd);
 		menuItem.addActionListener(new PlotActionListener(pd));
 		res.add(menuItem);
-		
-		
 		return res;
-		
 	}
 	
 	public Node getNodeOnRelativeLocation(double mx,double my) {
 		for ( Node n : sd.getWirelessNodeMap().getNodes() ) {
-			double nx = getXCoordinateFornode(n)+rad;
-			double ny = getYCoordinateFornode(n)+rad;
-			if ( Utils.distSqr(nx,ny,mx,my) < rad_sqr ) return n;
+			Pair<Integer,Integer> p = getCoordintaesForNode(n);
+			if ( Utils.distSqr(p.a,p.b,mx,my) < rad_sqr ) return n;
 		}
 		return null;
 	}
@@ -153,14 +152,6 @@ public class NetworkPanel extends JPanel {
 		return getNodeOnRelativeLocation(x+getX(),y+getY());
 	}
 
-	public double getXCoordinateFornode(Node n) {
-		return margin+n.getX()*ratio-rad;
-	}
-	
-	public double getYCoordinateFornode(Node n) {
-		return margin+n.getY()*ratio-rad;
-	}
-	
 	@Override
 	public void paint(Graphics g) {
 		super.paint(g);
@@ -178,11 +169,10 @@ public class NetworkPanel extends JPanel {
 				op = Color.YELLOW;
 			}
 			g2d.setColor(c);
-			int x = (int)getXCoordinateFornode(n);
-			int y = (int)getYCoordinateFornode(n);
-			g2d.fillOval(x,y,(int) rad*2,(int) rad*2);
+			Pair<Integer,Integer> p = getCoordintaesForNode(n);
+			g2d.fillOval(p.a,p.b,(int) rad*2,(int) rad*2);
 			g2d.setColor(op);
-			g2d.drawString(n.getIdx()+"",(float)(x),(float)(y));
+			g2d.drawString(n.getNodeIden().getIdx()+"",(float)(p.a),(float)(p.b));
 		}
 		g2d.setColor(Color.cyan);
 		g2d.drawLine(0, 0, 0, getHeight());
@@ -212,6 +202,10 @@ public class NetworkPanel extends JPanel {
 		Graphics2D g2dComponent = (Graphics2D) g;
 	    g2dComponent.drawImage(bufferedImage, null, 0, 0);
 	    
+	}
+
+	private Pair<Integer, Integer> getCoordintaesForNode(Node n) {
+		return new Pair<Integer, Integer>((int)(margin+n.getNodeIden().getX()*ratio-rad),(int)(margin+n.getNodeIden().getY()*ratio-rad));
 	}
 	
 

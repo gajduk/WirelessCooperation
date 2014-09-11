@@ -16,20 +16,26 @@ import simulator.adaptation.SynchronousStrategyAdaptation;
 import simulator.energy_distribution.ClosestAllEnergyDistribution;
 import simulator.energy_distribution.EnergyDistribution;
 import simulator.fitness.FitnessCalculator;
+import simulator.fitness.ImprovedDeltaFitnessCalculator;
+import simulator.fitness.ImprovedFitnessCalculator;
 import simulator.fitness.SimpleDeltaFitnessCalculator;
 import simulator.fitness.SimpleFitnessCalculator;
+import simulator.strategy.CooperatorAlwaysStrategyBehaviour;
+import simulator.strategy.CooperatorNeverStrategyBehaviour;
 import simulator.strategy.HeavisideProbabilityCalculator;
 import simulator.strategy.StrategyBehavior;
 import simulator.strategy.TitForTatStrategyBehaviour;
+import simulator.strategy.WinStayLoaseShiftStrategyBehaviour;
 
 public class SimulatorBuilder {
 	
-	FitnessCalculator fc = new SimpleFitnessCalculator();
+	FitnessCalculator fc = new ImprovedFitnessCalculator();
 	StrategyBehavior sb = new TitForTatStrategyBehaviour(new SimpleDeltaFitnessCalculator(), new HeavisideProbabilityCalculator(0));
+//	StrategyBehavior sb = new CooperatorAlwaysStrategyBehaviour();
 	double a = 1.0d;
 	long t = 999;
 	double p = 1.0d;
-	int N = 50;
+	int N = 80;
 	TrafficManager tm = new TrafficManager();
 	StrategyAdaptation sa = new SynchronousStrategyAdaptation(1000);
 	EnergyDistribution ed = new ClosestAllEnergyDistribution(0.5d,2.0d);
@@ -37,7 +43,7 @@ public class SimulatorBuilder {
 	boolean paused = true;
 	int coop  = 0;
 	Architecture arc = Architecture.AdHoc;
-	Mobility mob = Mobility.None;
+	Mobility mob = Mobility.RandomWaypoint;
 
 	
 	
@@ -49,7 +55,7 @@ public class SimulatorBuilder {
 		if ( gui ) {
 			sv = new SimulationView();
 		}
-		SimulationDirector sd = new SimulationDirector(p, wnm, tm, ed, sa,sv);
+		SimulationDirector sd = new SimulationDirector(p, wnm, tm, ed, sa,sv,mob);
 	
 		for ( int i = 0 ; i < coop ; ++i ) {
 			while ( true ) {
@@ -65,7 +71,7 @@ public class SimulatorBuilder {
 			sv.show();
 			sv.setVisible(true);
 		}
-		if ( paused ) {
+		if ( !paused ) {
 			sd.resume();
 			sd.setSpeed(0);
 			if ( sv != null )

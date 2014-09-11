@@ -282,9 +282,10 @@ public class SimulationView extends JFrame {
 		plots.add(pd);
 		menuItem.addActionListener(new PlotActionListener(pd));
 		plot_submenu.add(menuItem);		
-		
+		/*
 		strategy_submenu = new JMenu("Node strategy");
 		OptionMultiClass omc = ((OptionMultiClass<StrategyBehavior>)SimulationExperiment.options.get("S"));
+		
 		ButtonGroup bg = new ButtonGroup();
 		for ( Object s : omc.getOption_values().keySet() ) {
 			JRadioButtonMenuItem jrb = new JRadioButtonMenuItem(s.toString());
@@ -304,10 +305,10 @@ public class SimulationView extends JFrame {
 			});
 			strategy_submenu.add(jrb);
 		}
-
-		JMenu coop_type_submenu = new JMenu("Cooperation type");
+	   
+		coop_type_submenu = new JMenu("Cooperation type");
 		omc = ((OptionMultiClass<EnergyDistribution>)SimulationExperiment.options.get("EC"));
-		bg = new ButtonGroup();
+		ButtonGroup bg = new ButtonGroup();
 		for ( Object s : omc.getOption_values().keySet() ) {
 			JRadioButtonMenuItem jrb = new JRadioButtonMenuItem(s.toString());
 			bg.add(jrb);
@@ -324,7 +325,7 @@ public class SimulationView extends JFrame {
 			});
 			coop_type_submenu.add(jrb);
 		}
-		
+		 */
 		addMouseListener(new MouseListener() {
 			
 			@Override
@@ -350,8 +351,8 @@ public class SimulationView extends JFrame {
 			}
 		});
 		main_menu.add(plot_submenu);
-		main_menu.add(strategy_submenu);
-		main_menu.add(coop_type_submenu);
+//		main_menu.add(strategy_submenu);
+//		main_menu.add(coop_type_submenu);
 		menuBar.add(main_menu);
 		setJMenuBar(menuBar);
 	}

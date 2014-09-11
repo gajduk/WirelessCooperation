@@ -24,8 +24,8 @@ public class AverageEnergySpentNodeLinePlotFrame extends LinePlotFrame {
 		if ( k < prev_vals.size() ) {
 			prev_vals.removeFirst();
 		}
-		double current_val = n.getTotal_spent_energy()-last_val;
-		last_val = n.getTotal_spent_energy();
+		double current_val = n.getEs().getTotal_spent_energy()-last_val;
+		last_val = n.getEs().getTotal_spent_energy();
 		prev_vals.addLast(current_val);
 		double sum = 0.0;
 		for ( Double v : prev_vals ) {

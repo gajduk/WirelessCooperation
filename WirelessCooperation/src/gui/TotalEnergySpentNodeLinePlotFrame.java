@@ -14,7 +14,7 @@ public class TotalEnergySpentNodeLinePlotFrame extends LinePlotFrame {
 
 	@Override
 	protected double getCurrentValue() {
-		return n.getTotal_spent_energy();
+		return n.getEs().getTotal_spent_energy();
 	}
 
 }

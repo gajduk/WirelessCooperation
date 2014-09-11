@@ -1,6 +1,5 @@
 package utils;
 
-import javafx.geometry.Point2D;
 import java.util.List;
 import java.util.Random;
 
@@ -70,11 +69,11 @@ public class Utils {
 		return false;
 	}
 	
-	public static Point2D generateRandomPoint2DInsideCricle(double a) {
+	public static Pair<Double,Double> generateRandomPoint2DInsideCricle(double a) {
 		while ( true ) {
-			double x = rnd.nextDouble();
-			double y = rnd.nextDouble();
-			if ( distSqr(x,y,a/2,a/2) < a*a/4 ) return new Point2D(x, y);
+			double x = rnd.nextDouble()*a;
+			double y = rnd.nextDouble()*a;
+			if ( distSqr(x,y,a/2,a/2) < a*a/4 ) return new Pair<Double,Double>(x, y);
 		}
 	}
 

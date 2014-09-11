@@ -31,7 +31,7 @@ public class EnergyNi {
 	
 	public static void main(String[] args) throws Exception {
 		
-		SimulationExperiment.out_energy = new PrintWriter("energy_ni1.txt");
+//		SimulationExperiment.out_energy = new PrintWriter("energy_ni1.txt");
 		int num_threads = Runtime.getRuntime().availableProcessors()+1;
 		int times = 100;
 		ThreadPoolExecutor executor = new ThreadPoolExecutor(num_threads,times*2*2*100+1,Long.MAX_VALUE,TimeUnit.MINUTES,new ArrayBlockingQueue<Runnable>(times*2*2*100+1));
@@ -60,7 +60,7 @@ public class EnergyNi {
 		}
 		executor.shutdown();
 		executor.awaitTermination(Long.MAX_VALUE, TimeUnit.MINUTES);
-		SimulationExperiment.out_energy.close();
+//		SimulationExperiment.out_energy.close();
 		
 		/*
 		Scanner jin = new Scanner(new File("nodes.txt"));
