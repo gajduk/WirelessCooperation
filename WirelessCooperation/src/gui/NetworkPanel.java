@@ -15,7 +15,7 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 
-import builder.Mobility;
+import simulator.Mobility;
 import simulator.Node;
 import simulator.SimulationDirector;
 import utils.Pair;

@@ -5,7 +5,7 @@ import java.util.Random;
 import simulator.fitness.FitnessCalculator;
 import simulator.fitness.SimpleDeltaFitnessCalculator;
 import simulator.fitness.SimpleFitnessCalculator;
-import simulator.strategy.WinStayLoaseShiftStrategyBehaviour;
+import simulator.strategy.WinStayLoseShiftStrategyBehaviour;
 import simulator.strategy.StrategyBehavior;
 
 public class NodeFactory {

@@ -14,7 +14,7 @@ public class SynchronousStrategyAdaptation extends AbstractStrategyAdaptation {
 	
 	@Override
 	protected List<Node> getNodesToAdaptStrategyInternal(List<Node> nodes,long current_step) {
-		if ( current_step-last_update > T ) {
+		if ( current_step-last_update >= T ) {
 			return nodes;
 		}
 		return Collections.emptyList();

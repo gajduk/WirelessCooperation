@@ -16,9 +16,9 @@ import simulator.fitness.DeltaFitnessCalculator;
  * @author Andrej Gajduk
  *
  */
-public class WinStayLoaseShiftStrategyBehaviour extends AbstractStrategyBehaviour {
+public class WinStayLoseShiftStrategyBehaviour extends AbstractStrategyBehaviour {
 	
-	public WinStayLoaseShiftStrategyBehaviour(DeltaFitnessCalculator dfc,ProbabilityCalculator pc) {
+	public WinStayLoseShiftStrategyBehaviour(DeltaFitnessCalculator dfc,ProbabilityCalculator pc) {
 		super(dfc,pc);
 	}
 		

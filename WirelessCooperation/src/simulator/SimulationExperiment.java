@@ -32,7 +32,7 @@ import simulator.statistics.AveragePercentCooperatorsSpentSimulationStat;
 import simulator.statistics.NodeEnergySimulationStat;
 import simulator.statistics.TotalSpentEnergySimulationStat;
 import simulator.strategy.TitForTatStrategyBehaviour;
-import simulator.strategy.WinStayLoaseShiftStrategyBehaviour;
+import simulator.strategy.WinStayLoseShiftStrategyBehaviour;
 import simulator.strategy.CooperatorAlwaysStrategyBehaviour;
 import simulator.strategy.CooperatorNeverStrategyBehaviour;
 import simulator.strategy.HeavisideProbabilityCalculator;

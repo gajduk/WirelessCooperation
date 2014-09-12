@@ -5,7 +5,6 @@ import gui.SimulationView;
 import java.util.LinkedList;
 import java.util.List;
 
-import builder.Mobility;
 import simulator.adaptation.StrategyAdaptation;
 import simulator.energy_distribution.EnergyDistribution;
 import simulator.statistics.SimulationStat;
@@ -22,14 +21,13 @@ public class SimulationDirector {
 	private double p;
 	private boolean paused;
 	private long speed;
-	private static final int time_steps_during_single_iteration = 500;
+	private long time_steps_during_single_iteration;
 	private long current_time_step;
 	private long time_steps;
 	private List<SimulationStat> simulation_stats;
-	
 	private Mobility mob;
 	
-	public SimulationDirector(double p,WirelessNodeMap wnm,TrafficManager tm,EnergyDistribution ec,StrategyAdaptation sa,SimulationView sv, Mobility mob) {
+	public SimulationDirector(long time_steps_during_single_iteration,double p,WirelessNodeMap wnm,TrafficManager tm,EnergyDistribution ec,StrategyAdaptation sa,SimulationView sv, Mobility mob) {
 		this.wnm = wnm;
 		this.tm = tm;
 		this.ec = ec;
@@ -40,6 +38,7 @@ public class SimulationDirector {
 		this.speed = 0;
 		this.simulation_stats = new LinkedList<SimulationStat>();  
 		this.mob = mob;
+		this.time_steps_during_single_iteration = time_steps_during_single_iteration;
 	}
 	
 	public void addSimulationStat(SimulationStat ss) {

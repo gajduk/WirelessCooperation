@@ -6,46 +6,69 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import simulator.Architecture;
+import simulator.Mobility;
 import simulator.Node;
 import simulator.NodeIdentity;
 import simulator.SimulationDirector;
-import simulator.TrafficManager;
 import simulator.WirelessNodeMap;
-import simulator.adaptation.StrategyAdaptation;
 import simulator.adaptation.SynchronousStrategyAdaptation;
 import simulator.energy_distribution.ClosestAllEnergyDistribution;
 import simulator.energy_distribution.EnergyDistribution;
 import simulator.fitness.FitnessCalculator;
-import simulator.fitness.ImprovedDeltaFitnessCalculator;
 import simulator.fitness.ImprovedFitnessCalculator;
-import simulator.fitness.SimpleDeltaFitnessCalculator;
-import simulator.fitness.SimpleFitnessCalculator;
-import simulator.strategy.CooperatorAlwaysStrategyBehaviour;
-import simulator.strategy.CooperatorNeverStrategyBehaviour;
-import simulator.strategy.HeavisideProbabilityCalculator;
+import simulator.strategy.Strategies;
 import simulator.strategy.StrategyBehavior;
-import simulator.strategy.TitForTatStrategyBehaviour;
-import simulator.strategy.WinStayLoaseShiftStrategyBehaviour;
 
 public class SimulatorBuilder {
 	
 	FitnessCalculator fc = new ImprovedFitnessCalculator();
-	StrategyBehavior sb = new TitForTatStrategyBehaviour(new SimpleDeltaFitnessCalculator(), new HeavisideProbabilityCalculator(0));
-//	StrategyBehavior sb = new CooperatorAlwaysStrategyBehaviour();
+	StrategyBehavior sb = Strategies.TitForTat;
 	double a = 1.0d;
-	long t = 999;
 	double p = 1.0d;
 	int N = 80;
-	TrafficManager tm = new TrafficManager();
-	StrategyAdaptation sa = new SynchronousStrategyAdaptation(1000);
-	EnergyDistribution ed = new ClosestAllEnergyDistribution(0.5d,2.0d);
+	long T = 1000L;
+	EnergyDistribution ed = new ClosestAllEnergyDistribution(0.5d,4.0d);
 	boolean gui = true;
 	boolean paused = true;
 	int coop  = 0;
 	Architecture arc = Architecture.AdHoc;
 	Mobility mob = Mobility.RandomWaypoint;
-
 	
+	public SimulatorBuilder withCoop(int coop) {
+		this.coop = coop;
+		return this;
+	}
+
+	public SimulatorBuilder withN(int N) {
+		this.N = N;
+		return this;
+	}
+	
+	public SimulatorBuilder withStrategy(Strategies s) {
+		this.sb = s;
+		return this;
+	}
+	
+	public SimulatorBuilder withMobility(Mobility m) {
+		this.mob = m;
+		return this;
+	}
+	
+	public SimulatorBuilder withT(long T) {
+		this.T = T;
+		return this;
+	}
+	
+	public SimulatorBuilder running() {
+		this.paused = false;
+		return this;
+	}
+	
+	public SimulatorBuilder hidden() {
+		this.gui = false;
+		return this;
+	}
 	
 	public SimulationDirector build() {
 		List<NodeIdentity> node_idens = arc.generateNodes(a, N);
@@ -55,7 +78,7 @@ public class SimulatorBuilder {
 		if ( gui ) {
 			sv = new SimulationView();
 		}
-		SimulationDirector sd = new SimulationDirector(p, wnm, tm, ed, sa,sv,mob);
+		SimulationDirector sd = new SimulationDirector(T, p, wnm, arc.getTrafficManager(), ed, new SynchronousStrategyAdaptation(T),sv,mob);
 	
 		for ( int i = 0 ; i < coop ; ++i ) {
 			while ( true ) {
