@@ -133,10 +133,20 @@ public class NetworkPanel extends JPanel {
 				KeyEvent.VK_D);
 		menuItem.getAccessibleContext().setAccessibleDescription(
 				"Plots the delta energy: the energy spent since last time step");
-		pd = new AverageEnergySpentNodeLinePlotFrame(sd, "Delta energy for node:"+idx,SimulationView.last,1,n,Color.blue,50);
+		pd = new AverageEnergySpentNodeLinePlotFrame(sd, "Delta energy for node:"+idx,SimulationView.last,1,n,Color.blue,10);
 		sv.addPlot(pd);
 		menuItem.addActionListener(new PlotActionListener(pd));
 		res.add(menuItem);
+		
+		menuItem = new JMenuItem("Distance from center",
+				KeyEvent.VK_D);
+		menuItem.getAccessibleContext().setAccessibleDescription(
+				"Plots the distance from center");
+		pd = new DistanceFromCenterNodeLinePlotFrame(sd, "Distance from center"+idx,SimulationView.last,1,n,Color.blue);
+		sv.addPlot(pd);
+		menuItem.addActionListener(new PlotActionListener(pd));
+		res.add(menuItem);
+		
 		return res;
 	}
 	

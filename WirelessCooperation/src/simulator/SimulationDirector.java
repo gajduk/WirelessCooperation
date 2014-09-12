@@ -2,8 +2,11 @@ package simulator;
 
 import gui.SimulationView;
 
+import java.awt.event.WindowEvent;
 import java.util.LinkedList;
 import java.util.List;
+
+import javax.swing.JFrame;
 
 import simulator.adaptation.StrategyAdaptation;
 import simulator.energy_distribution.EnergyDistribution;
@@ -67,6 +70,10 @@ public class SimulationDirector {
 				runIteration();
 		}
 		simulationFinished();
+		if ( sv != null ) {
+			sv.setVisible(false);
+			sv.dispose();
+		}
 	}
 	
 	private void sendMessage(Node a, Node b) {

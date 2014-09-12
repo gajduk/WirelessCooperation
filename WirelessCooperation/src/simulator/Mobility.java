@@ -50,7 +50,7 @@ public enum Mobility {
 				Waypoint waypoint = waypoints.get(idx);
 				if ( waypoint == null ) {
 					Pair<Double,Double> target = Utils.generateRandomPoint2DInsideCricle(a);
-					int stept_to_get_there = (int)((Math.random()*50000)+10000);
+					int stept_to_get_there = (int)((Math.random()*300)+100);
 					double dx = x-target.a;
 					dx /= stept_to_get_there;
 					double dy = y-target.b;

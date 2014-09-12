@@ -35,6 +35,12 @@ public class SimulatorBuilder {
 	Architecture arc = Architecture.AdHoc;
 	Mobility mob = Mobility.RandomWaypoint;
 	
+	public SimulatorBuilder withArchitecture(Architecture arc) {
+		this.arc = arc;
+		return this;
+	}
+
+	
 	public SimulatorBuilder withCoop(int coop) {
 		this.coop = coop;
 		return this;
