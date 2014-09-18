@@ -1,44 +1,6 @@
 package simulator;
 
-import gui.SimulationView;
-
 import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.List;
-
-import options.AbstractOptionHandler;
-import options.OptionDouble;
-import options.OptionHandler;
-import options.OptionInteger;
-import options.OptionLong;
-import options.OptionMultiClass;
-import simulator.adaptation.AsynchronousStrategyAdaptation;
-import simulator.adaptation.StrategyAdaptation;
-import simulator.adaptation.SynchronousStrategyAdaptation;
-import simulator.energy_distribution.ClosestAllEnergyDistribution;
-import simulator.energy_distribution.DistributedFairEnergyDistribution;
-import simulator.energy_distribution.EnergyDistribution;
-import simulator.energy_distribution.EvenlyDistributedEnergyDistribution;
-import simulator.energy_distribution.MinimalEnergySpentEnergyDistribution;
-import simulator.fitness.AnotherFitnessCalculator;
-import simulator.fitness.CurrentEnergyDeltaFitnessCalculator;
-import simulator.fitness.DeltaFitnessCalculator;
-import simulator.fitness.FitnessCalculator;
-import simulator.fitness.ImprovedDeltaFitnessCalculator;
-import simulator.fitness.ImprovedFitnessCalculator;
-import simulator.fitness.SimpleDeltaFitnessCalculator;
-import simulator.fitness.SimpleFitnessCalculator;
-import simulator.statistics.AveragePercentCooperatorsSpentSimulationStat;
-import simulator.statistics.NodeEnergySimulationStat;
-import simulator.statistics.TotalSpentEnergySimulationStat;
-import simulator.strategy.TitForTatStrategyBehaviour;
-import simulator.strategy.WinStayLoseShiftStrategyBehaviour;
-import simulator.strategy.CooperatorAlwaysStrategyBehaviour;
-import simulator.strategy.CooperatorNeverStrategyBehaviour;
-import simulator.strategy.HeavisideProbabilityCalculator;
-import simulator.strategy.SigmoidProbabilityCalculator;
-import simulator.strategy.StrategyBehavior;
-import utils.Utils;
 
 public class SimulationExperiment {
 	

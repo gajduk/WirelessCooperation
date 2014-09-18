@@ -2,11 +2,8 @@ package simulator;
 
 import gui.SimulationView;
 
-import java.awt.event.WindowEvent;
 import java.util.LinkedList;
 import java.util.List;
-
-import javax.swing.JFrame;
 
 import simulator.adaptation.StrategyAdaptation;
 import simulator.energy_distribution.EnergyDistribution;
@@ -55,6 +52,10 @@ public class SimulationDirector {
 		this.simulation_stats.clear();
 	}
 	
+	public List<SimulationStat> getSimulation_stats() {
+		return simulation_stats;
+	}
+	
 	public long getCurrentTimeStep() {
 		return current_time_step;
 	}
@@ -63,16 +64,21 @@ public class SimulationDirector {
 		return wnm;
 	}
 	
-	public void runSimulation(long time_steps) throws Exception {
-		this.time_steps = time_steps;
-		while ( this.time_steps > 0 ) {
-			if ( ! isPaused() )
-				runIteration();
+	public void runSimulation(long time_steps) {
+		try {
+			this.time_steps = time_steps;
+			while ( this.time_steps > 0 ) {
+				if ( ! isPaused() )
+						runIteration();
+			}
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 		simulationFinished();
 		if ( sv != null ) {
 			sv.setVisible(false);
-			sv.dispose();
 		}
 	}
 	
@@ -121,11 +127,11 @@ public class SimulationDirector {
 		for ( SimulationStat ss : simulation_stats )
 			ss.update(this);
 		if ( getSpeed() > 0 ) {
-			try {
-				Thread.sleep(speed);
-			} catch( Exception e ) {
-				
-			}
+				try {
+					Thread.sleep(speed);
+				} catch (InterruptedException e) {
+					Thread.currentThread().interrupt();
+				}
 		}
 
 	}

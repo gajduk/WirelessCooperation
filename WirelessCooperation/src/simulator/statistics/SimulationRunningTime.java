@@ -1,6 +1,5 @@
 package simulator.statistics;
 
-import java.io.PrintWriter;
 import java.lang.management.ManagementFactory;
 
 import simulator.SimulationDirector;
@@ -9,8 +8,7 @@ public class SimulationRunningTime extends AbstractSimulationStat {
 	
 	long start,end;
 
-	public SimulationRunningTime(PrintWriter out, String additional_info) {
-		super(out, additional_info);
+	public SimulationRunningTime() {
 		start = ManagementFactory.getThreadMXBean().getCurrentThreadCpuTime();
 	}
 

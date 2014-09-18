@@ -10,9 +10,4 @@ public class CurrentEnergyDeltaFitnessCalculator implements  DeltaFitnessCalcula
 		return fm.getLastFitnessValue()-(save_coef*total_capacity);
 	}
 
-	@Override
-	public int getMinimumNumberOfValuesForDeltaCalculation() {
-		return 1;
-	}
-
 }

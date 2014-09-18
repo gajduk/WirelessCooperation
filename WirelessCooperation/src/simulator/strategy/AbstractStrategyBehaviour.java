@@ -2,7 +2,6 @@ package simulator.strategy;
 
 import simulator.fitness.DeltaFitnessCalculator;
 import simulator.fitness.FittnessMemory;
-import utils.Utils;
 
 public abstract class AbstractStrategyBehaviour implements StrategyBehavior {
 	

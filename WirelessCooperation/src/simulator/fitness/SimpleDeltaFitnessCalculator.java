@@ -16,11 +16,6 @@ public class SimpleDeltaFitnessCalculator implements DeltaFitnessCalculator {
 	}
 
 	@Override
-	public int getMinimumNumberOfValuesForDeltaCalculation() {
-		return 2;
-	}
-	
-	@Override
 	public String toString() {
 		return "simple";
 	}

@@ -7,9 +7,4 @@ public class ExcessEnergyDeltaFitnessCalculator implements DeltaFitnessCalculato
 		return fm.getLastFitnessValue();
 	}
 
-	@Override
-	public int getMinimumNumberOfValuesForDeltaCalculation() {
-		return 1;
-	}
-
 }

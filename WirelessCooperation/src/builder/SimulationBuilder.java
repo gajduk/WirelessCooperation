@@ -17,65 +17,77 @@ import simulator.energy_distribution.ClosestAllEnergyDistribution;
 import simulator.energy_distribution.EnergyDistribution;
 import simulator.fitness.FitnessCalculator;
 import simulator.fitness.ImprovedFitnessCalculator;
+import simulator.statistics.SimulationStat;
 import simulator.strategy.Strategies;
 import simulator.strategy.StrategyBehavior;
 
-public class SimulatorBuilder {
+public class SimulationBuilder {
 	
 	FitnessCalculator fc = new ImprovedFitnessCalculator();
-	StrategyBehavior sb = Strategies.TitForTat;
+	Strategies sb = Strategies.TitForTat;
 	double a = 1.0d;
 	double p = 1.0d;
-	int N = 80;
+	int N = 30;
 	long T = 1000L;
-	EnergyDistribution ed = new ClosestAllEnergyDistribution(0.5d,4.0d);
+	EnergyDistribution ed = new ClosestAllEnergyDistribution(0.39d,3.0d);
 	boolean gui = true;
 	boolean paused = true;
 	int coop  = 0;
 	Architecture arc = Architecture.AdHoc;
 	Mobility mob = Mobility.RandomWaypoint;
+	List<SimulationStat> simulation_stats = new ArrayList<>();
 	
-	public SimulatorBuilder withArchitecture(Architecture arc) {
+	public SimulationBuilder withSimulationStat(SimulationStat ss) {
+		simulation_stats.add(ss);
+		return this;
+	}
+	
+	public SimulationBuilder withoutSimulationStats() {
+		simulation_stats.clear();
+		return this;
+	}
+	
+	public SimulationBuilder withArchitecture(Architecture arc) {
 		this.arc = arc;
 		return this;
 	}
-
 	
-	public SimulatorBuilder withCoop(int coop) {
+	public SimulationBuilder withCoop(int coop) {
 		this.coop = coop;
 		return this;
 	}
 
-	public SimulatorBuilder withN(int N) {
+	public SimulationBuilder withN(int N) {
 		this.N = N;
 		return this;
 	}
 	
-	public SimulatorBuilder withStrategy(Strategies s) {
+	public SimulationBuilder withStrategy(Strategies s) {
 		this.sb = s;
 		return this;
 	}
 	
-	public SimulatorBuilder withMobility(Mobility m) {
+	public SimulationBuilder withMobility(Mobility m) {
 		this.mob = m;
 		return this;
 	}
 	
-	public SimulatorBuilder withT(long T) {
+	public SimulationBuilder withT(long T) {
 		this.T = T;
 		return this;
 	}
 	
-	public SimulatorBuilder running() {
+	public SimulationBuilder running() {
 		this.paused = false;
 		return this;
 	}
 	
-	public SimulatorBuilder hidden() {
+	public SimulationBuilder hidden() {
 		this.gui = false;
 		return this;
 	}
 	
+	@SuppressWarnings("deprecation")
 	public SimulationDirector build() {
 		List<NodeIdentity> node_idens = arc.generateNodes(a, N);
 		List<Node> nodes = new ArrayList<Node>(node_idens.stream().map(node_iden -> new Node(node_iden,2,false,sb,fc)).collect(Collectors.toList()));
@@ -85,7 +97,8 @@ public class SimulatorBuilder {
 			sv = new SimulationView();
 		}
 		SimulationDirector sd = new SimulationDirector(T, p, wnm, arc.getTrafficManager(), ed, new SynchronousStrategyAdaptation(T),sv,mob);
-	
+		simulation_stats.forEach(s -> sd.addSimulationStat(s));
+		
 		for ( int i = 0 ; i < coop ; ++i ) {
 			while ( true ) {
 				int idx = (int) (Math.random()*sd.getWirelessNodeMap().getNodes().size());
@@ -112,6 +125,18 @@ public class SimulatorBuilder {
 				sv.setSpeed(100);
 		}
 		return sd;
+	}
+
+	public Strategies getStrategy() {
+		return sb;
+	}
+
+	public Mobility getMobility() {
+		return mob;
+	}
+
+	public Architecture getArchitecture() {
+		return arc;
 	}
 
 }

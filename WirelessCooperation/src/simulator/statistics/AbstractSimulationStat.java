@@ -10,10 +10,7 @@ public abstract class AbstractSimulationStat implements SimulationStat {
 	private PrintWriter out;
 	private String additional_info;
 	
-	public AbstractSimulationStat(PrintWriter out,String additional_info) {
-		this.out = out;
-		this.additional_info = additional_info;
-	}
+	public AbstractSimulationStat() {}
 
 	public SimulationDirector getSimulationDirector() {
 		return sd;
@@ -23,9 +20,18 @@ public abstract class AbstractSimulationStat implements SimulationStat {
 		this.sd = sd;
 	}	
 	
+	public void setPrintWriter(PrintWriter out) {
+		this.out = out;
+	}
+	
+	public void setAdditionalInfo(String ai) {
+		this.additional_info = ai;
+	}
+	
 	@Override
 	public void simulationFinished(SimulationDirector simulationDirector) {
-		out.print(messageToLog());
+		if ( out != null )
+			out.print(messageToLog());
 	}
 	
 	@Override

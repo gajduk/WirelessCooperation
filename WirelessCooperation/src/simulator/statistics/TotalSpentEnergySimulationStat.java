@@ -1,7 +1,5 @@
 package simulator.statistics;
 
-import java.io.PrintWriter;
-
 import simulator.Node;
 import simulator.SimulationDirector;
 
@@ -9,16 +7,17 @@ public class TotalSpentEnergySimulationStat extends AbstractSimulationStat {
 
 	private double total_energy_spent;
 	
-	public TotalSpentEnergySimulationStat(PrintWriter out,
-			String additional_info) {
-		super(out, additional_info);
-	}
+	public TotalSpentEnergySimulationStat() {}
 
 	@Override
 	public void update(SimulationDirector simulationDirector) {
 		
 	}
 	
+	public double getTotal_energy_spent() {
+		return total_energy_spent;
+	}
+
 	@Override
 	public void simulationFinished(SimulationDirector simulationDirector) {
 		total_energy_spent = 0;

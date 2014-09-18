@@ -1,10 +1,9 @@
-package simulator;
+package simulator.statistics;
 
-import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import simulator.statistics.AbstractSimulationStat;
-import simulator.statistics.SimulationStat;
+import simulator.Node;
+import simulator.SimulationDirector;
 import utils.Utils;
 
 public class NodeCooperationStat extends AbstractSimulationStat {
@@ -13,8 +12,7 @@ public class NodeCooperationStat extends AbstractSimulationStat {
 	
 	ArrayList<ArrayList<Integer>> counts;
 
-	public NodeCooperationStat(PrintWriter out, String additional_info) {
-		super(out, additional_info);
+	public NodeCooperationStat() {
 		sb = new StringBuilder();
 	}
 
@@ -22,11 +20,11 @@ public class NodeCooperationStat extends AbstractSimulationStat {
 	public void update(SimulationDirector simulationDirector) {
 		if ( counts == null ) {
 			counts = new ArrayList<>();
-			for ( Node n : simulationDirector.getWirelessNodeMap().getNodes() ) 
+			for ( int i = 0 ; i < simulationDirector.getWirelessNodeMap().getNodes().size() ; ++i )
 				counts.add(new ArrayList<Integer>());
 		}
 		for ( Node n : simulationDirector.getWirelessNodeMap().getNodes() ) 
-			counts.get(n.getNodeIden().idx).add(n.isCooperator()?1:0);
+			counts.get(n.getNodeIden().getIdx()).add(n.isCooperator()?1:0);
 	}
 	
 	@Override

@@ -1,6 +1,5 @@
 package simulator.statistics;
 
-import java.io.PrintWriter;
 import java.util.ArrayList;
 
 import simulator.Node;
@@ -13,8 +12,7 @@ public class NodeEnergySimulationStat extends AbstractSimulationStat {
 	
 	ArrayList<ArrayList<Integer>> counts;
 
-	public NodeEnergySimulationStat(PrintWriter out, String additional_info) {
-		super(out, additional_info);
+	public NodeEnergySimulationStat() {
 		sb = new StringBuilder();
 	}
 
@@ -22,7 +20,7 @@ public class NodeEnergySimulationStat extends AbstractSimulationStat {
 	public void update(SimulationDirector simulationDirector) {
 		if ( counts == null ) {
 			counts = new ArrayList<>();
-			for ( Node n : simulationDirector.getWirelessNodeMap().getNodes() ) 
+			for ( int i = 0 ; i < simulationDirector.getWirelessNodeMap().getNodes().size() ; ++i ) 
 				counts.add(new ArrayList<Integer>());
 		}
 		for ( Node n : simulationDirector.getWirelessNodeMap().getNodes() ) 

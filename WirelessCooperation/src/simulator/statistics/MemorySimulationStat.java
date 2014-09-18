@@ -1,7 +1,5 @@
 package simulator.statistics;
 
-import java.io.PrintWriter;
-
 import simulator.SimulationDirector;
 import utils.Memory;
 
@@ -9,8 +7,7 @@ public abstract class MemorySimulationStat extends AbstractSimulationStat {
 
 	private Memory memory;
 	
-	public MemorySimulationStat(PrintWriter out,String additinal_info,int remember_last) {
-		super(out,additinal_info);
+	public MemorySimulationStat(int remember_last) {
 		this.memory = new Memory(remember_last);
 	}
 	

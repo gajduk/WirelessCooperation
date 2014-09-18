@@ -8,11 +8,6 @@ public class ImprovedDeltaFitnessCalculator implements DeltaFitnessCalculator {
 	}
 
 	@Override
-	public int getMinimumNumberOfValuesForDeltaCalculation() {
-		return 1;
-	}
-	
-	@Override
 	public String toString() {
 		return "imporved";
 	}
