@@ -25,7 +25,7 @@ public abstract class TestDifferentValues <T> {
 		while ( true ) {
 			SimulationBuilder sbs = getNextBuilder(builder);
 			if ( sbs == null ) return;
-			String descr = description+";"+getDescription(sbs);
+			String descr = description+" <|> "+getDescription(sbs);
 			if( inner_test != null )
 				inner_test.test(sbs, scs,repetitions,iterations,descr);
 			else {

@@ -34,6 +34,12 @@ public abstract class AbstractEnergyDistribution implements EnergyDistribution {
 	public double getAlpha() {
 		return alpha;
 	}
+	
+	@Override
+	public void setAlpha(double alpha) {
+		this.alpha = alpha;
+	}
+
 
 	public AbstractEnergyDistribution(double ni,double alpha){
 		this.ni = ni;

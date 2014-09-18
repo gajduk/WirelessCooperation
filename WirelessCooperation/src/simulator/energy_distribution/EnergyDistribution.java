@@ -11,5 +11,7 @@ public interface EnergyDistribution {
 	public abstract double getNi();
 
 	public abstract double getAlpha();
+
+	public abstract void setAlpha(double alpha);
 	
 }

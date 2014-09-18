@@ -19,7 +19,6 @@ import simulator.fitness.FitnessCalculator;
 import simulator.fitness.ImprovedFitnessCalculator;
 import simulator.statistics.SimulationStat;
 import simulator.strategy.Strategies;
-import simulator.strategy.StrategyBehavior;
 
 public class SimulationBuilder {
 	
@@ -137,6 +136,19 @@ public class SimulationBuilder {
 
 	public Architecture getArchitecture() {
 		return arc;
+	}
+
+	public int getN() {
+		return N;
+	}
+
+	public SimulationBuilder withAlpha(Double alpha) {
+		this.ed.setAlpha(alpha);
+		return this;
+	}
+
+	public double getAlpha() {
+		return ed.getAlpha();
 	}
 
 }

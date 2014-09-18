@@ -1,0 +1,4 @@
+ <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:10
+5218.87
+ <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:20
+2281.50
