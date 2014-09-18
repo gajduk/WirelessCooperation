@@ -65,6 +65,7 @@ public class SimulationDirector {
 	}
 	
 	public void runSimulation(long time_steps) {
+		mob.init();
 		try {
 			this.time_steps = time_steps;
 			while ( this.time_steps > 0 ) {
@@ -107,6 +108,9 @@ public class SimulationDirector {
 	}
 
 	public void runIteration() throws Exception {
+		if ( sv != null ) {
+			sv.update();
+		}
 		int goal_time_step = (int) Math.max(time_steps-time_steps_during_single_iteration,0);
 		while ( time_steps > goal_time_step ) {
 				if ( Math.random() < p ) {
@@ -121,9 +125,6 @@ public class SimulationDirector {
 		}
 		mob.updateLocations(wnm.getNodes(),wnm.geta());
 		current_time_step += time_steps_during_single_iteration;
-		if ( sv != null ) {
-			sv.update();
-		}
 		for ( SimulationStat ss : simulation_stats )
 			ss.update(this);
 		if ( getSpeed() > 0 ) {

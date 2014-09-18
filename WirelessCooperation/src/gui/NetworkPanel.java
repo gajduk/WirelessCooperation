@@ -15,8 +15,8 @@ import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
 
-import simulator.Mobility;
 import simulator.Node;
+import simulator.NodeIdentity;
 import simulator.SimulationDirector;
 import utils.Pair;
 import utils.Utils;
@@ -152,7 +152,7 @@ public class NetworkPanel extends JPanel {
 	
 	public Node getNodeOnRelativeLocation(double mx,double my) {
 		for ( Node n : sd.getWirelessNodeMap().getNodes() ) {
-			Pair<Integer,Integer> p = getCoordintaesForNode(n);
+			Pair<Integer,Integer> p = getCoordinatesForNode(n.getNodeIden());
 			if ( Utils.distSqr(p.a,p.b,mx,my) < rad_sqr ) return n;
 		}
 		return null;
@@ -179,7 +179,7 @@ public class NetworkPanel extends JPanel {
 				op = Color.YELLOW;
 			}
 			g2d.setColor(c);
-			Pair<Integer,Integer> p = getCoordintaesForNode(n);
+			Pair<Integer,Integer> p = getCoordinatesForNode(n.getNodeIden());
 			g2d.fillOval(p.a,p.b,(int) rad*2,(int) rad*2);
 			g2d.setColor(op);
 			g2d.drawString(n.getNodeIden().getIdx()+"",(float)(p.a),(float)(p.b));
@@ -191,6 +191,9 @@ public class NetworkPanel extends JPanel {
 		g2d.drawLine(0, getHeight(), getWidth(), getHeight());
 		g2d.setFont(new Font("Arial", 1, 24));
 		g2d.drawString(sd.getCurrent_time_step()+"",5, 30);
+		double rad = ratio/2;
+		Pair<Integer,Integer> p = getCoordinatesForNode(new NodeIdentity(.5,.5,0),rad);
+		g2d.drawOval(p.a,p.b, (int) rad*2, (int) rad*2);
 		/*
 		g2d.setColor(Color.white);
 		for ( Node n : sd.getWirelessNodeMap().getNodes() ) {
@@ -214,8 +217,12 @@ public class NetworkPanel extends JPanel {
 	    
 	}
 
-	private Pair<Integer, Integer> getCoordintaesForNode(Node n) {
-		return new Pair<Integer, Integer>((int)(margin+n.getNodeIden().getX()*ratio-rad),(int)(margin+n.getNodeIden().getY()*ratio-rad));
+	private Pair<Integer, Integer> getCoordinatesForNode(NodeIdentity n) {
+		return getCoordinatesForNode(n,this.rad);
+	}
+	
+	private Pair<Integer, Integer> getCoordinatesForNode(NodeIdentity n,double rad) {
+		return new Pair<Integer, Integer>((int)(margin+n.getX()*ratio-rad),(int)(margin+n.getY()*ratio-rad));
 	}
 	
 

@@ -12,13 +12,7 @@ public enum Architecture {
 			List<NodeIdentity> res = new ArrayList<>();
 			NodeFactory nf = new NodeFactory();
 			for ( int i = 1 ; i < N ; ++i ) {
-				NodeIdentity n = null;
-				while ( true ) {
-					n = nf.generateNodeWithRandomLocation(a,i);
-					if ( Utils.dist(n.getX(), n.getY(),a/2,a/2) < a/2 )
-						break;
-				}
-				res.add(n);
+				res.add(nf.generateNodeWithRandomLocation(a,i));
 			}
 			return res;
 		}
@@ -34,13 +28,7 @@ public enum Architecture {
 			res.add(new NodeIdentity(a/2,a/2, 0));
 			NodeFactory nf = new NodeFactory();
 			for ( int i = 2 ; i < N ; ++i ) {
-				NodeIdentity n = null;
-				while ( true ) {
-					n = nf.generateNodeWithRandomLocation(a,i);
-					if ( Utils.dist(n.getX(), n.getY(),a/2,a/2) < a/2 )
-						break;
-				}
-				res.add(n);
+				res.add(nf.generateNodeWithRandomLocation(a,i));
 			}
 			return res;
 		}

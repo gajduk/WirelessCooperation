@@ -19,7 +19,7 @@ public class TestDifferentMobilities extends TestDifferentValues<Mobility> {
 
 	@Override
 	protected String getDescription(SimulationBuilder builder) {
-		return builder.getMobility().name();
+		return "Mobility:"+builder.getMobility().name();
 	}
 	
 	

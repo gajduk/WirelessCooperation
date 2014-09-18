@@ -29,9 +29,9 @@ public class Test {
 		
 		SimulationBuilder builder = new SimulationBuilder().
 				withStrategy(Strategies.TitForTat).withMobility(Mobility.None).
-				withCoop(1).withN(30).withT(1000L).running().withSimulationStat(new TotalSpentEnergySimulationStat());
+				withCoop(1).withN(30).withT(1000L).running().hidden().withSimulationStat(new TotalSpentEnergySimulationStat());
 		
-		long iterations = 1000000L;
+		long iterations = 2000000L;
 		int repetitions = 2;
 		
 		TestDifferentStrategies tds = new TestDifferentStrategies(
