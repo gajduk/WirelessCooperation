@@ -21,4 +21,4 @@ yields global energy efficiency.
 
 ![alt tag](https://github.com/gajduk/WirelessCooperation/blob/master/WirelessCooperation/toy_example.png)
 
-In the figure. A toy example that illustrates how cooperation can spread in a network.
+In the figure: A toy example that illustrates how cooperation can spread in a network.
