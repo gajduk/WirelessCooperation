@@ -20,7 +20,8 @@ import builder.SimulationBuilder;
 public class Test {
 	
 	public static void main(String[] args) throws Exception {
-		System.setOut(new PrintStream(new FileOutputStream("out1.txt")));
+		System.setOut(new PrintStream(new FileOutputStream("out5.txt")));
+		System.setErr(new PrintStream(new FileOutputStream("err.txt")));
 		List<StatisticsCalculators> scs = new ArrayList<>();
 		scs.add(StatisticsCalculators.TotalEnergy);
 		
@@ -28,8 +29,8 @@ public class Test {
 				withStrategy(Strategies.Def).withMobility(Mobility.None).
 				withCoop(1).withN(40).withT(1000L).running().hidden().withSimulationStat(new TotalSpentEnergySimulationStat());
 		
-		long iterations = 200000L;
-		int repetitions = 50;
+		long iterations = 2000000;
+		int repetitions = 100;
 		
 		TestDifferentStrategies tds = new TestDifferentStrategies(
 				Strategies.TitForTat,Strategies.Coop,Strategies.WinStayLoseShift,Strategies.Def);
@@ -38,6 +39,7 @@ public class Test {
 		TestDifferentN N = new TestDifferentN(10,20,30,40,50,60,70,80,90,100);
 		TestDifferentValues.testDifferentValues(builder, scs, repetitions, iterations, N,alpha,tdm,tds);
 		System.out.close();
+		System.err.close();
 		System.exit(0);
 	}
 	

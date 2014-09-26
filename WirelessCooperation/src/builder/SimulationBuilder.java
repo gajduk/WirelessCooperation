@@ -24,7 +24,7 @@ public class SimulationBuilder {
 	
 	FitnessCalculator fc = new ImprovedFitnessCalculator();
 	Strategies sb = Strategies.TitForTat;
-	double a = 1.0d;
+	double a = 100.0d;
 	double p = 1.0d;
 	int N = 30;
 	long T = 1000L;

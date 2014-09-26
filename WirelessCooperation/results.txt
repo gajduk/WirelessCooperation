@@ -1,800 +1,800 @@
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:10
-5218.87
+520093976.90
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:20
-2281.50
+219209446.85
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:30
-1379.36
+139898222.48
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:40
-948.31
+96469897.19
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:50
-738.82
+74003276.10
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:60
-588.99
+59818324.04
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:70
-501.33
+49687441.28
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:80
-428.20
+42620027.25
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:90
-368.18
+37219389.31
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:100
-327.69
+33145539.00
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.50 <|> N:10
-3593.56
+3726958511.56
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.50 <|> N:20
-1448.11
+1485183330.86
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.50 <|> N:30
-837.26
+849743963.87
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.50 <|> N:40
-602.53
+596767827.77
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.50 <|> N:50
-448.82
+450573913.21
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.50 <|> N:60
-365.80
+361562274.31
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.50 <|> N:70
-296.96
+288232989.09
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.50 <|> N:80
-246.73
+250292242.39
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.50 <|> N:90
-218.16
+217837677.80
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.50 <|> N:100
-192.37
+193918693.39
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.00 <|> N:10
-2640.52
+26027649321.90
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.00 <|> N:20
-938.28
+9916307396.12
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.00 <|> N:30
-527.49
+5665759285.22
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.00 <|> N:40
-370.54
+3627643564.97
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.00 <|> N:50
-268.28
+2794258747.34
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.00 <|> N:60
-218.76
+2188156739.41
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.00 <|> N:70
-183.63
+1805429259.70
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.00 <|> N:80
-149.42
+1501262692.50
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.00 <|> N:90
-129.93
+1348529922.49
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.00 <|> N:100
-117.10
+1166720505.90
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.50 <|> N:10
-1842.83
+185410381012.50
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.50 <|> N:20
-655.31
+64386688609.52
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.50 <|> N:30
-351.77
+34787327881.70
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.50 <|> N:40
-238.06
+22998545479.06
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.50 <|> N:50
-181.73
+17176217349.83
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.50 <|> N:60
-134.66
+13777029225.04
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.50 <|> N:70
-110.57
+11063902003.30
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.50 <|> N:80
-96.72
+9395163815.24
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.50 <|> N:90
-80.16
+8077038487.56
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:3.50 <|> N:100
-70.90
+7215427569.95
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:4.00 <|> N:10
-1491.65
+1479047723068.10
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:4.00 <|> N:20
-450.53
+453674656176.38
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:4.00 <|> N:30
-225.43
+240482061986.40
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:4.00 <|> N:40
-152.99
+153548118934.21
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:4.00 <|> N:50
-110.63
+112349896032.80
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:4.00 <|> N:60
-88.76
+85847396810.56
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:4.00 <|> N:70
-71.17
+70334462447.69
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:4.00 <|> N:80
-60.35
+61445693750.66
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:4.00 <|> N:90
-50.75
+51038334829.98
  <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:4.00 <|> N:100
-44.50
+44208921804.36
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:10
-3448.26
+342570025.08
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:20
-1403.72
+146891265.45
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:30
-869.49
+89859081.16
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:40
-610.54
+63270882.28
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:50
-487.02
+48297977.53
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:60
-394.35
+39169916.44
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:70
-327.70
+32599335.24
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:80
-274.80
+27813926.59
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:90
-242.63
+24533526.75
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:100
-215.86
+21713972.97
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:10
-2087.05
+2208080726.93
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:20
-839.38
+863592793.13
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:30
-487.77
+500375187.28
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:40
-357.65
+350128687.97
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:50
-258.95
+265641253.35
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:60
-212.11
+211350209.90
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:70
-175.45
+175019849.37
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:80
-149.46
+150281107.52
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:90
-130.03
+130492428.92
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:100
-116.09
+115712309.57
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:10
-1380.40
+13691123961.56
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:20
-500.14
+5151826492.65
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:30
-284.02
+2883589224.54
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:40
-197.61
+1989388118.83
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:50
-145.18
+1476487091.73
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:60
-119.60
+1167931892.69
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:70
-97.74
+980294149.11
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:80
-84.09
+825326412.65
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:90
-71.79
+716345821.01
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:100
-62.42
+634058937.15
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:10
-835.27
+92172095693.62
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:20
-323.26
+31284055035.74
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:30
-167.01
+17594432061.24
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:40
-115.36
+11517704269.58
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:50
-85.02
+8517327497.90
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:60
-65.86
+6707919717.03
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:70
-55.20
+5486200351.19
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:80
-45.36
+4671409579.64
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:90
-39.93
+4027186006.38
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:100
-35.24
+3573493659.12
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:10
-604.11
+642241499342.48
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:20
-192.80
+198010319619.05
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:30
-104.24
+104901489484.22
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:40
-66.40
+67934460634.53
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:50
-48.52
+49397889293.39
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:60
-38.40
+38833977245.27
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:70
-31.61
+31824258608.41
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:80
-26.82
+26827548512.08
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:90
-22.97
+23113763903.70
  <|> Strategy:TitForTat <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:100
-20.06
+20462780631.98
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.00 <|> N:10
-4566.67
+521834221.74
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.00 <|> N:20
-1991.08
+204853698.61
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.00 <|> N:30
-1227.22
+120523870.01
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.00 <|> N:40
-854.09
+86204416.58
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.00 <|> N:50
-667.32
+66319715.26
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.00 <|> N:60
-544.68
+55105516.90
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.00 <|> N:70
-453.34
+45498993.90
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.00 <|> N:80
-388.92
+39399602.89
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.00 <|> N:90
-340.88
+34388986.42
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.00 <|> N:100
-303.30
+30652016.65
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.50 <|> N:10
-3113.55
+3126187360.48
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.50 <|> N:20
-1190.27
+1234858554.22
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.50 <|> N:30
-738.93
+724438071.95
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.50 <|> N:40
-505.56
+513981569.74
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.50 <|> N:50
-387.98
+396386439.68
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.50 <|> N:60
-311.62
+312315294.21
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.50 <|> N:70
-269.47
+266666082.66
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.50 <|> N:80
-230.95
+224121369.41
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.50 <|> N:90
-194.96
+199797011.82
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:2.50 <|> N:100
-180.42
+177658490.53
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.00 <|> N:10
-2168.27
+22473051700.58
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.00 <|> N:20
-777.35
+7909220734.18
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.00 <|> N:30
-442.24
+4552231768.80
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.00 <|> N:40
-327.55
+3124813369.10
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.00 <|> N:50
-234.63
+2350845553.89
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.00 <|> N:60
-192.08
+1872661972.59
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.00 <|> N:70
-159.76
+1560359202.45
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.00 <|> N:80
-133.75
+1374872410.65
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.00 <|> N:90
-120.58
+1203793412.81
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.00 <|> N:100
-106.52
+1072065546.02
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.50 <|> N:10
-1447.85
+153484595398.61
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.50 <|> N:20
-475.14
+51112398079.98
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.50 <|> N:30
-277.76
+27982952237.31
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.50 <|> N:40
-192.98
+19451027134.78
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.50 <|> N:50
-140.91
+14131179163.09
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.50 <|> N:60
-116.01
+11831248969.68
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.50 <|> N:70
-96.35
+9370673977.17
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.50 <|> N:80
-82.93
+8359986389.53
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.50 <|> N:90
-72.01
+7350924953.48
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:3.50 <|> N:100
-67.93
+6473791344.95
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:4.00 <|> N:10
-997.93
+1022677792135.23
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:4.00 <|> N:20
-297.65
+318960788311.07
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:4.00 <|> N:30
-182.09
+174438793060.62
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:4.00 <|> N:40
-124.32
+122127437201.92
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:4.00 <|> N:50
-91.52
+92553896858.84
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:4.00 <|> N:60
-75.09
+72142272288.10
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:4.00 <|> N:70
-60.32
+61475391008.36
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:4.00 <|> N:80
-52.77
+51536406490.54
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:4.00 <|> N:90
-46.17
+45176441537.50
  <|> Strategy:Coop <|> Mobility:None <|> Alpha:4.00 <|> N:100
-41.09
+40990354465.21
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:10
-2932.26
+316036544.49
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:20
-1304.66
+132450585.48
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:30
-788.88
+80216371.24
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:40
-560.58
+56893701.60
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:50
-431.50
+44016813.62
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:60
-356.50
+35733880.51
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:70
-297.79
+29914551.29
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:80
-253.32
+25831528.83
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:90
-230.59
+22724452.06
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:100
-200.59
+20235819.47
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:10
-1896.79
+1901880376.33
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:20
-730.73
+734933188.09
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:30
-421.64
+436117852.18
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:40
-305.34
+307993297.77
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:50
-229.84
+233383440.98
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:60
-188.19
+190157864.71
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:70
-158.53
+158618539.99
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:80
-136.07
+136404198.26
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:90
-119.76
+119579035.43
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:100
-104.69
+106755549.64
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:10
-1167.93
+11712760977.99
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:20
-404.57
+4121776340.08
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:30
-245.14
+2398634609.01
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:40
-170.12
+1682014055.96
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:50
-127.52
+1288306854.98
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:60
-102.47
+1035399264.57
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:70
-85.72
+862037426.63
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:80
-72.78
+740197190.84
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:90
-64.40
+653877613.19
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:100
-57.65
+582948354.67
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:10
-797.08
+70550651832.61
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:20
-250.88
+24288013570.23
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:30
-135.79
+13598784057.59
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:40
-92.33
+9563974135.17
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:50
-69.32
+7217693057.90
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:60
-58.65
+5827324202.69
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:70
-47.62
+4856636227.16
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:80
-41.49
+4157326219.61
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:90
-36.42
+3648248166.51
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:100
-32.51
+3260867144.20
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:10
-407.84
+441378169550.23
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:20
-139.43
+143231081618.41
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:30
-82.22
+79639256960.38
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:40
-53.85
+54827954453.23
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:50
-41.04
+41560712240.14
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:60
-33.08
+33794670587.53
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:70
-27.70
+27825298706.32
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:80
-24.26
+23919165027.33
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:90
-21.39
+20933848087.62
  <|> Strategy:Coop <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:100
-18.41
+18829074699.10
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.00 <|> N:10
-5423.68
+522203332.71
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.00 <|> N:20
-2281.58
+226408533.30
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.00 <|> N:30
-1451.64
+135669525.63
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.00 <|> N:40
-979.37
+97806669.18
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.00 <|> N:50
-757.72
+74251226.25
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.00 <|> N:60
-603.20
+59884220.36
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.00 <|> N:70
-506.72
+49023641.67
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.00 <|> N:80
-432.60
+42352640.31
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.00 <|> N:90
-370.66
+37685149.23
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.00 <|> N:100
-326.71
+33060030.61
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.50 <|> N:10
-3893.46
+3973886823.72
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.50 <|> N:20
-1477.34
+1457374874.60
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.50 <|> N:30
-905.24
+875310929.40
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.50 <|> N:40
-608.44
+608976188.90
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.50 <|> N:50
-448.57
+462648072.29
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.50 <|> N:60
-360.91
+357837281.21
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.50 <|> N:70
-292.65
+295225749.75
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.50 <|> N:80
-250.19
+255411424.09
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.50 <|> N:90
-219.24
+221303263.61
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:2.50 <|> N:100
-195.47
+196852774.96
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.00 <|> N:10
-2815.56
+26429342423.85
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.00 <|> N:20
-968.90
+10073104690.48
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.00 <|> N:30
-536.74
+5639203275.63
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.00 <|> N:40
-398.64
+3858595555.07
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.00 <|> N:50
-282.85
+2790277787.31
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.00 <|> N:60
-224.61
+2203162650.56
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.00 <|> N:70
-180.28
+1837524181.19
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.00 <|> N:80
-154.35
+1529330377.21
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.00 <|> N:90
-130.13
+1359416402.52
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.00 <|> N:100
-117.39
+1183079457.38
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.50 <|> N:10
-1982.07
+213621921629.51
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.50 <|> N:20
-710.58
+70466672946.49
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.50 <|> N:30
-373.26
+37024027607.90
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.50 <|> N:40
-257.72
+24403792386.22
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.50 <|> N:50
-178.53
+17902834561.24
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.50 <|> N:60
-132.70
+13529571493.69
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.50 <|> N:70
-113.84
+11436317384.29
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.50 <|> N:80
-95.31
+9381301398.20
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.50 <|> N:90
-83.19
+8323377648.37
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:3.50 <|> N:100
-72.16
+7198042487.58
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:4.00 <|> N:10
-1543.23
+1491045676388.27
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:4.00 <|> N:20
-463.82
+490140704195.20
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:4.00 <|> N:30
-247.64
+240934636232.01
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:4.00 <|> N:40
-156.79
+164189221156.59
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:4.00 <|> N:50
-111.88
+114829203619.68
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:4.00 <|> N:60
-86.67
+86785575260.50
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:4.00 <|> N:70
-73.53
+73170742778.71
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:4.00 <|> N:80
-59.87
+59190335433.48
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:4.00 <|> N:90
-53.38
+52554869310.17
  <|> Strategy:WinStayLoseShift <|> Mobility:None <|> Alpha:4.00 <|> N:100
-43.87
+45246012466.37
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:10
-3458.01
+352127530.41
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:20
-1483.97
+149993317.96
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:30
-906.54
+91706973.58
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:40
-632.15
+64135348.98
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:50
-481.14
+48806227.04
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:60
-388.39
+39419178.27
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:70
-322.80
+33052510.34
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:80
-279.31
+28133562.33
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:90
-244.34
+24595989.43
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:100
-216.12
+21851621.05
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:10
-2174.85
+2183615836.82
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:20
-908.43
+891212231.63
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:30
-535.15
+513305369.22
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:40
-366.08
+357396697.49
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:50
-269.92
+268879311.98
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:60
-219.32
+214662551.22
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:70
-173.24
+177123093.11
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:80
-145.50
+150046260.61
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:90
-130.49
+131034523.92
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:100
-114.77
+116469198.05
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:10
-1593.17
+14826179067.74
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:20
-542.56
+5449313849.17
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:30
-300.63
+3007215211.40
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:40
-203.25
+2020841023.15
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:50
-155.18
+1507555584.08
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:60
-119.33
+1190047164.87
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:70
-97.01
+988954406.27
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:80
-82.49
+829731948.27
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:90
-72.85
+726928552.25
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:100
-63.02
+640190563.78
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:10
-997.95
+101412952444.30
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:20
-316.04
+33379847775.85
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:30
-175.95
+18195527372.04
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:40
-118.06
+11728394320.17
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:50
-89.00
+8617426016.31
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:60
-66.36
+6801697116.14
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:70
-53.58
+5558991143.82
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:80
-46.05
+4698261530.58
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:90
-39.82
+4076833675.96
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:100
-34.92
+3598668394.02
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:10
-674.99
+696271605108.94
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:20
-190.89
+218687974871.86
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:30
-114.02
+107217587972.32
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:40
-65.54
+70148383124.32
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:50
-50.82
+50273123749.03
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:60
-39.83
+39504281682.39
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:70
-31.90
+32088695477.54
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:80
-27.43
+27086077487.63
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:90
-23.73
+23492787199.05
  <|> Strategy:WinStayLoseShift <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:100
-20.60
+20639458496.51
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.00 <|> N:10
-5463.87
+557731663.27
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.00 <|> N:20
-2601.34
+259746118.37
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.00 <|> N:30
-1738.82
+171899519.87
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.00 <|> N:40
-1289.73
+127863491.25
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.00 <|> N:50
-1024.94
+102405492.28
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.00 <|> N:60
-863.11
+85095274.51
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.00 <|> N:70
-729.53
+71546815.05
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.00 <|> N:80
-626.79
+63458455.70
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.00 <|> N:90
-554.38
+56463593.13
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.00 <|> N:100
-500.06
+50367227.18
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.50 <|> N:10
-4270.91
+4228877181.63
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.50 <|> N:20
-2143.55
+2014471737.54
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.50 <|> N:30
-1338.37
+1338401913.51
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.50 <|> N:40
-1018.24
+979243404.39
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.50 <|> N:50
-792.73
+809967581.71
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.50 <|> N:60
-678.83
+658324048.74
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.50 <|> N:70
-563.63
+560585904.58
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.50 <|> N:80
-501.65
+493358881.70
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.50 <|> N:90
-440.02
+441175863.06
  <|> Strategy:Def <|> Mobility:None <|> Alpha:2.50 <|> N:100
-389.72
+393573358.85
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.00 <|> N:10
-3210.11
+34412434436.94
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.00 <|> N:20
-1573.85
+16211244458.93
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.00 <|> N:30
-1134.97
+10869193169.52
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.00 <|> N:40
-783.49
+8039645860.47
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.00 <|> N:50
-617.36
+6220351828.10
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.00 <|> N:60
-524.53
+5273787019.01
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.00 <|> N:70
-457.75
+4459175072.21
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.00 <|> N:80
-389.11
+3979246510.00
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.00 <|> N:90
-344.07
+3490229894.22
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.00 <|> N:100
-317.87
+3131245438.15
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.50 <|> N:10
-2783.41
+289350282235.87
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.50 <|> N:20
-1334.46
+126901298641.03
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.50 <|> N:30
-865.93
+85944045964.09
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.50 <|> N:40
-640.22
+65242156519.40
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.50 <|> N:50
-503.58
+51170148495.16
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.50 <|> N:60
-433.49
+42420307613.00
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.50 <|> N:70
-374.55
+36632410736.75
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.50 <|> N:80
-318.11
+31944872656.83
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.50 <|> N:90
-285.52
+28206010452.16
  <|> Strategy:Def <|> Mobility:None <|> Alpha:3.50 <|> N:100
-254.85
+25409482480.75
  <|> Strategy:Def <|> Mobility:None <|> Alpha:4.00 <|> N:10
-2281.21
+2403906435775.35
  <|> Strategy:Def <|> Mobility:None <|> Alpha:4.00 <|> N:20
-1043.38
+1093655876526.59
  <|> Strategy:Def <|> Mobility:None <|> Alpha:4.00 <|> N:30
-681.31
+723624662479.81
  <|> Strategy:Def <|> Mobility:None <|> Alpha:4.00 <|> N:40
-517.47
+527938021043.27
  <|> Strategy:Def <|> Mobility:None <|> Alpha:4.00 <|> N:50
-429.98
+418110502267.89
  <|> Strategy:Def <|> Mobility:None <|> Alpha:4.00 <|> N:60
-351.12
+348471789108.01
  <|> Strategy:Def <|> Mobility:None <|> Alpha:4.00 <|> N:70
-308.37
+301060619648.91
  <|> Strategy:Def <|> Mobility:None <|> Alpha:4.00 <|> N:80
-267.51
+259186540950.60
  <|> Strategy:Def <|> Mobility:None <|> Alpha:4.00 <|> N:90
-239.51
+241222729041.07
  <|> Strategy:Def <|> Mobility:None <|> Alpha:4.00 <|> N:100
-214.73
+209555019776.19
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:10
-3707.43
+363141883.13
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:20
-1777.29
+173627285.92
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:30
-1139.87
+114449513.17
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:40
-861.26
+85670424.64
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:50
-669.66
+67839345.62
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:60
-554.48
+56454808.82
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:70
-476.06
+48399551.44
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:80
-422.68
+42302408.16
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:90
-369.02
+37438786.53
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.00 <|> N:100
-331.75
+33572814.59
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:10
-2592.62
+2666741190.66
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:20
-1184.41
+1250191919.62
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:30
-800.61
+812884240.59
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:40
-592.91
+604186651.81
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:50
-483.98
+484261071.45
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:60
-396.05
+400705555.36
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:70
-336.84
+342366710.10
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:80
-291.34
+300155785.63
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:90
-263.40
+265456666.66
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:2.50 <|> N:100
-235.24
+239227650.38
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:10
-1862.69
+19583120276.47
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:20
-918.63
+9068699219.82
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:30
-594.09
+5911657074.27
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:40
-431.39
+4412847074.45
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:50
-353.76
+3500232521.03
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:60
-284.87
+2900712582.62
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:70
-244.79
+2478808124.88
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:80
-214.95
+2184726126.56
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:90
-193.36
+1929443226.42
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.00 <|> N:100
-167.78
+1743174592.54
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:10
-1439.20
+141416941499.93
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:20
-713.84
+67887187012.53
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:30
-452.67
+44173841172.05
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:40
-319.05
+33113596492.00
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:50
-257.82
+26284158149.91
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:60
-211.38
+21474880578.84
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:70
-182.70
+18684272653.16
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:80
-160.67
+16301304441.49
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:90
-143.17
+14455354195.76
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:3.50 <|> N:100
-127.50
+12930985812.64
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:10
-1048.13
+1058524706256.26
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:20
-543.29
+512298411590.90
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:30
-323.86
+336256981680.80
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:40
-248.52
+251499321141.86
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:50
-196.13
+200121354190.16
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:60
-160.75
+163615383591.49
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:70
-138.46
+141516733780.31
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:80
-120.24
+123575881860.52
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:90
-108.52
+109237272676.43
  <|> Strategy:Def <|> Mobility:RandomWaypoint <|> Alpha:4.00 <|> N:100
-99.12
+98010760616.16

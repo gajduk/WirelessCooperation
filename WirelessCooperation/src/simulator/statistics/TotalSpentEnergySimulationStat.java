@@ -11,7 +11,7 @@ public class TotalSpentEnergySimulationStat extends AbstractSimulationStat {
 
 	@Override
 	public void update(SimulationDirector simulationDirector) {
-		
+		//DO NTH
 	}
 	
 	public double getTotal_energy_spent() {

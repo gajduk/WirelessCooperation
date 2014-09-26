@@ -81,7 +81,7 @@ public final class Node {
 		es.total_spent_energy += value;
 	}
 	
-	public void updatetotal_energy_spent_deflector(double value) {
+	public void updatetotal_energy_spent_defector(double value) {
 		es.total_energy_spent_defector += value;
 		this.updateTotalEnergySpent(value);
 	}
@@ -101,7 +101,7 @@ public final class Node {
 	
 	public void updateenergy_spent_defector_from_last_update(double value) {
 		es.energy_spent_defector_from_last_update += value;
-		updatetotal_energy_spent_deflector(value);
+		updatetotal_energy_spent_defector(value);
 		updateenergy_spent_from_last_update(value);
 	}
 	
