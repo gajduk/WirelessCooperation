@@ -18,3 +18,5 @@ context of wireless communication networks verify these
 observations and indicate that uncomplicated local rules, followed
 by simple fitness evaluation, can generate network behavior which
 yields global energy efficiency.
+
+![alt tag](https://github.com/gajduk/WirelessCooperation/blob/master/WirelessCooperation/toy_example.png)
