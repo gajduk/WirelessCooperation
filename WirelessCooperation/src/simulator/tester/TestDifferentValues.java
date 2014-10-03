@@ -16,12 +16,13 @@ public abstract class TestDifferentValues <T> {
 	
 	int i = 0;
 	
+	@SafeVarargs
 	public  TestDifferentValues(T... t) {
 		this.t = new ArrayList<T>(Arrays.asList(t));
 	}
 	
 	public void test(SimulationBuilder builder, List<StatisticsCalculators> scs,int repetitions, long iterations,String description) {
-		i = 0;
+		this.i = 0;
 		while ( true ) {
 			SimulationBuilder sbs = getNextBuilder(builder);
 			if ( sbs == null ) return;
@@ -33,8 +34,7 @@ public abstract class TestDifferentValues <T> {
 					builder.withoutSimulationStats();
 					for ( StatisticsCalculators sc : scs )
 						builder.withSimulationStat(sc.getSimulationStat());
-					SimulationDirector sd = builder.build();
-					sd.runSimulation(iterations);
+					builder.build().runSimulation(iterations);
 				}
 				System.out.println(descr);
 				for ( StatisticsCalculators sc : scs ) {

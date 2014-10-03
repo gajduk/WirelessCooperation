@@ -2,9 +2,8 @@ package simulator.statistics;
 
 public enum StatisticsCalculators implements StatisticsCalculator {
 	TotalEnergy(new TotalEnergyStatisticsCalculator()),
+	EnergyByNode(new EnergySpentByNodeStatisticsCalculator()),
 	PercentCoop(new PercentCoopStatisticsCalculator());
-	
-	
 	
 	private StatisticsCalculators(StatisticsCalculator sc) {
 		this.sc = sc;

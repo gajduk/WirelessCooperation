@@ -1,7 +1,5 @@
 package simulator.statistics;
 
-import main.AverageDistanceCooperator;
-
 public class PercentCoopStatisticsCalculator extends AbstractStatisticsCalculator<AveragePercentCooperatorsSimulationStat> {
 
 	@Override

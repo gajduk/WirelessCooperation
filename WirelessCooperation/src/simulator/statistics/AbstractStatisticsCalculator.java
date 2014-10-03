@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public abstract class AbstractStatisticsCalculator <T extends SimulationStat> implements StatisticsCalculator {
 	
-	ArrayList<T > stats = new ArrayList<>();
+	ArrayList<T> stats = new ArrayList<>();
 	
 	@Override
 	public void clear() {

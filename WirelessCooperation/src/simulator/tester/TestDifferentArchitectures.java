@@ -19,7 +19,7 @@ public class TestDifferentArchitectures extends TestDifferentValues<Architecture
 
 	@Override
 	protected String getDescription(SimulationBuilder builder) {
-		return builder.getArchitecture().name();
+		return "Architecture:"+builder.getArchitecture().name();
 	}
 	
 	

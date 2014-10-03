@@ -1,38 +1,43 @@
 package simulator.statistics;
 
+import java.util.ArrayList;
+
 import simulator.Node;
 import simulator.SimulationDirector;
 
-public class TotalSpentEnergySimulationStat extends AbstractSimulationStat {
-
-	private double total_energy_spent;
+public class EnergySpenByNodeSimulationStat extends AbstractSimulationStat {
 	
-	public TotalSpentEnergySimulationStat() {}
+	private ArrayList<Double> energies;
+	
+	public EnergySpenByNodeSimulationStat() {
+	}
 
 	@Override
 	public void update(SimulationDirector simulationDirector) {
-		//DO NTH
+		//DO NTH	
+	}
+
+	public ArrayList<Double> getEnergies() {
+		return energies;
 	}
 	
-	public double getTotal_energy_spent() {
-		return total_energy_spent;
-	}
 
 	@Override
 	public void simulationFinished(SimulationDirector simulationDirector) {
-		total_energy_spent = 0;
+		this.energies = new ArrayList<>();
 		for ( Node n : simulationDirector.getWirelessNodeMap().getNodes() ) {
-			total_energy_spent += n.getEs().getTotal_spent_energy();
+			energies.add(n.getEs().getTotal_spent_energy());
 		}
 		super.simulationFinished(simulationDirector);
 	}
 	
 	@Override
 	public String messageToLog() {
-		StringBuilder sb = new StringBuilder("Total Energy spent by all nodes\n");
+		StringBuilder sb = new StringBuilder("Energy spent by individual nodes\n");
 		sb.append(super.messageToLog());
-		sb.append("Value:").append(total_energy_spent).append("\n");
+		sb.append("Value:").append(energies).append("\n");
 		return sb.toString();
 	}
+
 
 }
