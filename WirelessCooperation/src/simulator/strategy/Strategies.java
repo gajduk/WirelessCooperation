@@ -1,5 +1,6 @@
 package simulator.strategy;
 
+import simulator.fitness.CurrentFitnessDeltaFitnessCalculator;
 import simulator.fitness.DeltaFitnessCalculator;
 import simulator.fitness.FittnessMemory;
 import simulator.fitness.SimpleDeltaFitnessCalculator;
@@ -12,6 +13,7 @@ public enum Strategies implements StrategyBehavior {
 	StatusQuo(new RemainTheSameAlways());
 
 	private StrategyBehavior sb;
+	
 	private Strategies(StrategyBehavior sb) {
 		this.sb = sb;
 	}
@@ -31,5 +33,5 @@ public enum Strategies implements StrategyBehavior {
 	public ProbabilityCalculator getPc() {
 		return sb.getPc();
 	}
-
+	
 }

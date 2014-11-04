@@ -5,11 +5,11 @@ import java.util.ArrayList;
 import simulator.Node;
 import simulator.SimulationDirector;
 
-public class EnergySpenByNodeSimulationStat extends AbstractSimulationStat {
+public class EnergySpentByNodeSimulationStat extends AbstractSimulationStat {
 	
 	private ArrayList<Double> energies;
 	
-	public EnergySpenByNodeSimulationStat() {
+	public EnergySpentByNodeSimulationStat() {
 	}
 
 	@Override

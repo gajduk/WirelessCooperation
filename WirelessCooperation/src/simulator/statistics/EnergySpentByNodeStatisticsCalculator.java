@@ -3,7 +3,7 @@ package simulator.statistics;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class EnergySpentByNodeStatisticsCalculator extends AbstractStatisticsCalculator<EnergySpenByNodeSimulationStat> {
+public class EnergySpentByNodeStatisticsCalculator extends AbstractStatisticsCalculator<EnergySpentByNodeSimulationStat> {
 	
 	@Override
 	public String getAggregatedResult() {
@@ -14,8 +14,8 @@ public class EnergySpentByNodeStatisticsCalculator extends AbstractStatisticsCal
 	}
 
 	@Override
-	protected EnergySpenByNodeSimulationStat getSimulationStatInternal() {
-		return new EnergySpenByNodeSimulationStat();
+	protected EnergySpentByNodeSimulationStat getSimulationStatInternal() {
+		return new EnergySpentByNodeSimulationStat();
 	}
 	
 }

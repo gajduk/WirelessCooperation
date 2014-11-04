@@ -5,9 +5,12 @@ import gui.SimulationView;
 import java.util.LinkedList;
 import java.util.List;
 
+import javax.xml.crypto.NodeSetData;
+
 import simulator.adaptation.StrategyAdaptation;
 import simulator.energy_distribution.EnergyDistribution;
 import simulator.statistics.SimulationStat;
+import utils.Utils;
 
 
 public class SimulationDirector {
@@ -74,7 +77,6 @@ public class SimulationDirector {
 			}
 			
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		simulationFinished();
@@ -129,17 +131,16 @@ public class SimulationDirector {
 			ss.update(this);
 		if ( getSpeed() > 0 ) {
 				try {
-					Thread.sleep(speed);
+					Thread.sleep(getSpeed());
 				} catch (InterruptedException e) {
 					Thread.currentThread().interrupt();
 				}
 		}
-
 	}
 
 
 	public synchronized void setSpeed(long speed) {
-		Thread.currentThread().interrupt();
+//		Thread.currentThread().interrupt();
 		this.speed = speed;
 	}
 

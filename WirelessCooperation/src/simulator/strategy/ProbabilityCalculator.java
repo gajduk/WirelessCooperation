@@ -9,10 +9,10 @@ package simulator.strategy;
 public interface ProbabilityCalculator {
 	
 	/**
-	 * A method that gives the probability that a positive change in the enviorment has occured
+	 * A method that gives the probability that a positive change in the environment has occurred
 	 * @param x - a fitness value between (-~,+~), where positive values usually denote positive change
 	 * @return the probability that the fitness is a result of a positive change in fitness
 	 */
-	public abstract double getPositiveDecisionProbability(double x);
+	public abstract double getPositiveDecisionProbability(double fitness_change);
 
 }

@@ -13,7 +13,7 @@ public class TestDifferentStrategies extends TestDifferentValues<Strategies> {
 
 	@Override
 	protected String getDescription(SimulationBuilder builder) {
-		return "Strategy:"+builder.getStrategy().name();
+		return "Strategy:"+builder.getClass().getSimpleName();
 	}
 
 	@Override

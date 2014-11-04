@@ -88,10 +88,10 @@ public final class Node {
 	
 	public void updateenergy_spent_sad_from_last_update(double value) {
 		es.energy_spent_sad_from_last_update += value;
-		this.updateTotalEnergy_spen_sad(value);
+		this.updateTotalEnergy_spent_sad(value);
 	}
 	
-	private void updateTotalEnergy_spen_sad(double value) {
+	private void updateTotalEnergy_spent_sad(double value) {
 		es.total_energy_spent_sad += value;
 	}
 

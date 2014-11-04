@@ -28,13 +28,13 @@ public class HeavisideProbabilityCalculator extends DeterministicProbabilityCalc
 	 * See the purpose of this function in {@link ProbabilityCalculator#getPositiveDecisionProbability(double)}
 	 */
 	@Override
-	public double getPositiveDecisionProbability(double x) {
-		return Utils.doubleEqual(x,t)?0.5:(x>t?1.0:0.0);
+	public double getPositiveDecisionProbability(double fitness_change) {
+		return Utils.doubleEqual(fitness_change,t)?Double.MIN_VALUE:(fitness_change>t?1.0:0.0);
 	}
 
-	public HeavisideProbabilityCalculator(double h) {
+	public HeavisideProbabilityCalculator(double t) {
 		super();
-		this.t = h;
+		this.t = t;
 	}
 
 }

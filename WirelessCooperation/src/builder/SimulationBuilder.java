@@ -19,22 +19,28 @@ import simulator.fitness.FitnessCalculator;
 import simulator.fitness.ImprovedFitnessCalculator;
 import simulator.statistics.SimulationStat;
 import simulator.strategy.Strategies;
+import simulator.strategy.StrategyBehavior;
 
 public class SimulationBuilder {
 	
 	FitnessCalculator fc = new ImprovedFitnessCalculator();
-	Strategies sb = Strategies.TitForTat;
+	StrategyBehavior sb = Strategies.TitForTat;
 	double a = 100.0d;
 	double p = 1.0d;
 	int N = 30;
 	long T = 1000L;
-	EnergyDistribution ed = new ClosestAllEnergyDistribution(0.39d,3.0d);
+	EnergyDistribution ed = new ClosestAllEnergyDistribution(0.6d,3.0d);
 	boolean gui = true;
 	boolean paused = true;
 	int coop  = 0;
 	Architecture arc = Architecture.AdHoc;
 	Mobility mob = Mobility.RandomWaypoint;
 	List<SimulationStat> simulation_stats = new ArrayList<>();
+	
+	public SimulationBuilder withFitnessCalculator(FitnessCalculator fc) {
+		this.fc = fc;
+		return this;
+	}
 	
 	public SimulationBuilder withSimulationStat(SimulationStat ss) {
 		simulation_stats.add(ss);
@@ -61,7 +67,7 @@ public class SimulationBuilder {
 		return this;
 	}
 	
-	public SimulationBuilder withStrategy(Strategies s) {
+	public SimulationBuilder withStrategy(StrategyBehavior s) {
 		this.sb = s;
 		return this;
 	}
@@ -119,14 +125,14 @@ public class SimulationBuilder {
 				sv.setPaused(false);
 		}
 		else {
-			sd.setSpeed(100);
+			sd.setSpeed(1000);
 			if ( sv != null )
-				sv.setSpeed(100);
+				sv.setSpeed(1000);
 		}
 		return sd;
 	}
 
-	public Strategies getStrategy() {
+	public StrategyBehavior getStrategy() {
 		return sb;
 	}
 

@@ -5,7 +5,6 @@ import simulator.fitness.FittnessMemory;
 
 public abstract class AbstractStrategyBehaviour implements StrategyBehavior {
 	
-	
 	protected DeltaFitnessCalculator dfc;
 	protected ProbabilityCalculator pc;
 
@@ -18,33 +17,20 @@ public abstract class AbstractStrategyBehaviour implements StrategyBehavior {
 		return dfc;
 	}
 	
-	
 	public ProbabilityCalculator getPc() {
 		return pc;
 	}
 
 	public boolean toCooperateOrNotToCooperate(boolean is_cooperator, FittnessMemory fm) {
 		double pp = getPositiveDecisionProbability(fm);
-	//	if ( change_not_valid(fm,pp) ) return is_cooperator;
+		if ( pp == Double.MIN_VALUE ) return is_cooperator;
 		boolean decision = Math.random()<pp;
 		return toCooperateOrNotToCooperateInternal(is_cooperator, decision);
 	}
 	
 	protected abstract boolean toCooperateOrNotToCooperateInternal(boolean is_cooperator,boolean decision);
 
-	/*
-	public boolean change_not_valid(FittnessMemory fm, double pp) {
-		return Utils.doubleEqual(pp, 0.5) || fm.getCurrentNumValues() < dfc.getMinimumNumberOfValuesForDeltaCalculation();
-	}
-	*/
-	
 	public double getPositiveDecisionProbability(FittnessMemory fm) {
-		//inital state
-		/*
-		double df_norm = dfc.getDeltaF(fm)/Math.abs(fm.getLastFitnessValue());
-		if ( dfc.getMinimumNumberOfValuesForDeltaCalculation() > fm.getCurrentNumValues() ) return 0.5;
-		*/
-		//modified state
 		double df_norm = dfc.getDeltaF(fm);
 		return pc.getPositiveDecisionProbability(df_norm);
 	}

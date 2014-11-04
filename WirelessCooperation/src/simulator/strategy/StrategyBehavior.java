@@ -26,5 +26,5 @@ public interface StrategyBehavior {
 	public DeltaFitnessCalculator getDfc();
 	
 	public ProbabilityCalculator getPc();
-
+	
 }

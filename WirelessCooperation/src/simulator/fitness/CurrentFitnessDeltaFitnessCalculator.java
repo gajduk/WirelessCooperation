@@ -1,6 +1,6 @@
 package simulator.fitness;
 
-public class ImprovedDeltaFitnessCalculator implements DeltaFitnessCalculator {
+public class CurrentFitnessDeltaFitnessCalculator implements DeltaFitnessCalculator {
 
 	@Override
 	public double getDeltaF(FittnessMemory fm) {
@@ -9,7 +9,7 @@ public class ImprovedDeltaFitnessCalculator implements DeltaFitnessCalculator {
 
 	@Override
 	public String toString() {
-		return "imporved";
+		return "current_fitness";
 	}
 
 

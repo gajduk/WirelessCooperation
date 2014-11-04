@@ -1,0 +1,12 @@
+ <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:10
+520349421.42
+ <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:20
+229189292.13
+ <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:30
+140321900.03
+ <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:40
+97296042.84
+ <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:50
+75004466.48
+ <|> Strategy:TitForTat <|> Mobility:None <|> Alpha:2.00 <|> N:60
+59304727.29

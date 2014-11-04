@@ -7,6 +7,7 @@ import utils.Utils;
 
 public enum Architecture {
 	AdHoc {
+		
 		@Override
 		public List<NodeIdentity> generateNodes(double a,int N) {
 			List<NodeIdentity> res = new ArrayList<>();
@@ -21,7 +22,10 @@ public enum Architecture {
 		public TrafficManager getTrafficManager() {
 			return new TrafficManager();
 		}
+		
+		
 	},CentralAntena {
+		
 		@Override
 		public	List<NodeIdentity> generateNodes(double a, int N) {
 			List<NodeIdentity> res = new ArrayList<>();
@@ -37,6 +41,7 @@ public enum Architecture {
 		public TrafficManager getTrafficManager() {
 			return new CenterReceiverTrafficManager();
 		}
+		
 	};
 	
 	public abstract List<NodeIdentity> generateNodes(double a,int N);
