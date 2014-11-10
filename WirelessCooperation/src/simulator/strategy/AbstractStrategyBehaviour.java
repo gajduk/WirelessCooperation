@@ -24,6 +24,7 @@ public abstract class AbstractStrategyBehaviour implements StrategyBehavior {
 	public boolean toCooperateOrNotToCooperate(boolean is_cooperator, FittnessMemory fm) {
 		double pp = getPositiveDecisionProbability(fm);
 		if ( pp == Double.MIN_VALUE ) return is_cooperator;
+		if ( pp == Double.MAX_VALUE ) return false;
 		boolean decision = Math.random()<pp;
 		return toCooperateOrNotToCooperateInternal(is_cooperator, decision);
 	}
@@ -32,6 +33,7 @@ public abstract class AbstractStrategyBehaviour implements StrategyBehavior {
 
 	public double getPositiveDecisionProbability(FittnessMemory fm) {
 		double df_norm = dfc.getDeltaF(fm);
+		if ( df_norm == 0 ) return Double.MAX_VALUE;
 		return pc.getPositiveDecisionProbability(df_norm);
 	}
 	
